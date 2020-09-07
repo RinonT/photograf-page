@@ -3,3 +3,76 @@
 .page_header { 
   background-color: $header-background;
 }
+
+.page_header_heading {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: $header-text-color;
+}
+
+.page_header_container {
+  @include flex-row-alignement;
+  justify-content: space-between;
+
+}
+
+.page_navigation {
+  padding: 1rem;
+  background-color: #f8f8f8;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100px;
+  height: max-content; 
+  box-shadow: 0 0 50px rgba(0,0,0,.5);
+  transform: translate(200%, -100%);
+  transition: transform 0.3s;
+}
+
+details.show_menu {
+  & summary::-webkit-details-marker {
+  display:none;
+  }
+  
+  & summary{  
+    padding: 32px;
+    padding-right: 16px;
+    background-image: url(../images/icon_menu.svg);
+    background-repeat: no-repeat;
+    background-position-y: 24px;
+    background-position-x: 16px;
+    outline: none;
+  }
+
+  & p,
+  & span {
+    display: none;
+  }
+}
+
+
+
+.show_menu[open] ~ .page_navigation {
+  transform: translate(200%, 0%); 
+}
+  
+.page_links {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: $default-text-color;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+ 
+
+@media(min-width: $desktop-breakpoint) {
+
+
+}

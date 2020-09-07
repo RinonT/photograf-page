@@ -1,10 +1,18 @@
 :root {
   --header-background-color: #434CCC;
-  --main-background-color: rgba(67, 76, 204, 0.05); }
+  --main-background-color: rgba(67, 76, 204, 0.05);
+  --text-primary-color: #000000;
+  --text-color-white: #FFFFFF; }
 
 body {
   margin: 0;
-  background-color: var(--main-background-color); }
+  background-color: var(--main-background-color);
+  font-size: 16px;
+  line-height: 24px; }
+
+.page_container {
+  margin-left: 16px;
+  margin-right: 16px; }
 
 ul {
   list-style: none;
@@ -17,9 +25,72 @@ ul {
 a {
   text-decoration: none; }
 
+@media (min-width: 1114px) {
+  .page_container {
+    max-width: 1114px;
+    margin-left: auto;
+    margin-right: auto; } }
+
 :root {
   --header-background-color: #434CCC;
-  --main-background-color: rgba(67, 76, 204, 0.05); }
+  --main-background-color: rgba(67, 76, 204, 0.05);
+  --text-primary-color: #000000;
+  --text-color-white: #FFFFFF; }
 
 .page_header {
   background-color: var(--header-background-color); }
+
+.page_header_heading {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: var(--text-color-white); }
+
+.page_header_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.page_navigation {
+  padding: 1rem;
+  background-color: #f8f8f8;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100px;
+  height: max-content;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  transform: translate(200%, -100%);
+  transition: transform 0.3s; }
+
+details.show_menu summary::-webkit-details-marker {
+  display: none; }
+
+details.show_menu summary {
+  padding: 32px;
+  padding-right: 16px;
+  background-image: url(../images/icon_menu.svg);
+  background-repeat: no-repeat;
+  background-position-y: 24px;
+  background-position-x: 16px;
+  outline: none; }
+
+details.show_menu p,
+details.show_menu span {
+  display: none; }
+
+.show_menu[open] ~ .page_navigation {
+  transform: translate(200%, 0%); }
+
+.page_links {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-primary-color);
+  text-transform: uppercase;
+  opacity: 0.5; }
