@@ -71,6 +71,7 @@ details.show_menu summary::-webkit-details-marker {
   display: none; }
 
 details.show_menu summary {
+  display: none;
   padding: 32px;
   padding-right: 16px;
   background-image: url(../images/icon_menu.svg);
@@ -94,3 +95,20 @@ details.show_menu span {
   color: var(--text-primary-color);
   text-transform: uppercase;
   opacity: 0.5; }
+
+@media (min-width: 1114px) {
+  details.show_menu {
+    display: none; }
+  .page_navigation {
+    width: unset;
+    background-color: unset;
+    position: unset;
+    box-shadow: unset;
+    transform: translate(-50%, 0%); }
+  .page_navigation_tabs {
+    max-width: 324px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .page_links {
+    text-transform: unset; } }

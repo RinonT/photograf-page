@@ -16,7 +16,6 @@
 .page_header_container {
   @include flex-row-alignement;
   justify-content: space-between;
-
 }
 
 .page_navigation {
@@ -39,7 +38,8 @@ details.show_menu {
   display:none;
   }
   
-  & summary{  
+  & summary {  
+    display: none;
     padding: 32px;
     padding-right: 16px;
     background-image: url(../images/icon_menu.svg);
@@ -73,6 +73,26 @@ details.show_menu {
  
 
 @media(min-width: $desktop-breakpoint) {
+  details.show_menu {
+    display: none;
+  }
 
+  .page_navigation {
+    width: unset;
+    background-color: unset;
+    position: unset;
+    box-shadow: unset;
+    transform: translate(0%, 0%);
+  }
+  
+  .page_navigation_tabs {
+    max-width: 324px;
+    @include flex-row-alignement;
+    justify-content: space-between;
+  }
+
+  .page_links {
+    text-transform: unset;
+  }
 
 }
