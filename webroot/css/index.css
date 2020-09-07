@@ -7,14 +7,21 @@
 
 body {
   font-family: DM Sans;
-  margin: 0;
-  background-color: var(--main-background-color);
   font-size: 16px;
-  line-height: 24px; }
+  line-height: 24px;
+  margin: 0;
+  background-color: var(--main-background-color); }
 
 .page_contents_container {
   margin-left: 16px;
   margin-right: 16px; }
+
+body,
+h1,
+h2,
+h3 {
+  font-style: normal;
+  font-weight: normal; }
 
 ul {
   list-style: none;
@@ -31,7 +38,8 @@ label {
   display: block; }
 
 fieldset {
-  border-color: transparent; }
+  border-color: transparent;
+  padding: 0; }
 
 @media (min-width: 1114px) {
   .page_container {
@@ -139,4 +147,39 @@ details.show_menu span {
   --yellow-background: #FFDD78; }
 
 .contact_section {
-  background-color: var(--yellow-background); }
+  background-color: var(--yellow-background);
+  padding-top: 63px;
+  padding-bottom: 54px; }
+
+.contact_section_heading {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase; }
+
+.contact_section_sub-heading {
+  font-size: 40px;
+  line-height: 48px; }
+
+.email_adress_label {
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.email_adress_input {
+  border: 2px rgba(128, 128, 128, 0.39);
+  min-width: 90%;
+  margin-top: 12px;
+  padding: 13px; }
+
+.email_adress_input:focus {
+  outline-color: var(--header-background-color); }
+
+.submit_button {
+  background-color: var(--header-background-color);
+  border-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  color: var(--text-color-white);
+  margin-top: 16px;
+  padding: 13px;
+  padding-left: 45px;
+  padding-right: 45px; }

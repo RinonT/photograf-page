@@ -50,31 +50,34 @@
     <article class="page_section beauty_section">
       <div class="page_contents_container beauty_section_container">
         <header class="">
-          
+
         </header>
       </div>
     </article>
     <article class="page_section contact_section">
-      <header class="contact_section_header">
-        <h2 class="contact_section_heading">
-          Latest
-        </h2>
-        <h3 class="contact_section_sub-heading">
-          Stay up-to-date
-          with my updates
-        </h3>
-        <form action="./" method="POST">
+      <div class="page_contents_container">
+        <header class="contact_section_header">
+          <h2 class="contact_section_heading">
+            Latest
+          </h2>
+          <h3 class="contact_section_sub-heading">
+            Stay up-to-date
+            with my updates
+          </h3>
+        </header>
+        <form class="contact_form" action="./" method="POST">
           <fieldset>
-            <label for="email_adress">
+            <label class="email_adress_label" for="email_adress">
               Your email adress
             </label>
-            <input class="email_adress_input" type="email" name="email" placeholder="e.g. jesse@gmail.com" id="email_adress">  
+            <input class="email_adress_input" type="email" name="email" placeholder="e.g. jesse@gmail.com"
+              id="email_adress">
           </fieldset>
           <div class="button_container">
             <button class="submit_button" type="submit">Subscribe</button>
           </div>
-         </form>
-      </header>
+        </form>
+      </div>
     </article>
   </main>
 </body>

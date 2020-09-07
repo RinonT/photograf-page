@@ -2,10 +2,10 @@
  
 body {
   font-family: DM Sans;
-  margin: 0;
-  background-color: $page-background;
   font-size: 16px;
   line-height: 24px;
+  margin: 0;
+  background-color: $page-background;
 }
 
 .page_contents_container {
@@ -13,6 +13,14 @@ body {
   margin-right: 16px;
 }
 
+body,
+h1, 
+h2,
+h3 {
+  font-style: normal;
+  font-weight: normal;
+}
+ 
 ul {
   @include reset(ul);
 }
@@ -27,6 +35,7 @@ label {
 
 fieldset {
   border-color: transparent;
+  padding: 0;
 }
 
 @media(min-width: $desktop-breakpoint) {

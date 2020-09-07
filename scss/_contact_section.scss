@@ -5,3 +5,42 @@
   padding-top: 63px;
   padding-bottom: 54px;
 }
+
+.contact_section_heading {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.contact_section_sub-heading {
+  font-size: 40px;
+  line-height: 48px; 
+}
+
+.email_adress_label {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.email_adress_input {
+  border: 2px rgba(128, 128, 128, 0.39);
+  min-width: 90%;
+  margin-top: 12px;
+  padding: 13px;   
+}
+ 
+.email_adress_input:focus {
+  outline-color: $header-background;
+}
+
+.submit_button {
+  background-color: $header-background;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  color: $header-text-color;
+  margin-top: 16px;
+  padding: 13px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
