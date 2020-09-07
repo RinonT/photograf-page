@@ -1,0 +1,36 @@
+
+@mixin reset($type){
+  $resets: (
+    ul: (
+      list-style: none, 
+      margin: 0,
+      padding: 0,
+
+      li: (
+        margin: 0,
+        padding: 0, 
+      )
+    )
+  );
+  @each $prop, $value in map-get($resets, $type) {
+    @if type-of($value) == 'map' {
+      & > #{$prop} {
+        @each $sub-prop, $sub-value in $value {
+          #{$sub-prop}: $sub-value;
+        }
+      }      
+    } @else {
+      #{$prop}: $value;
+    }
+  }
+}
+
+@mixin flex-row-alignement {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-column-alignement {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,3 +1,13 @@
+@import "variables";
+
 body {
-  background-color: red;
+  margin: 0;
+}
+
+ul {
+  @include reset(ul);
+}
+ 
+a {
+  text-decoration: none;
 }
