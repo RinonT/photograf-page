@@ -1,5 +1,10 @@
+:root {
+  --header-background-color: #434CCC;
+  --main-background-color: rgba(67, 76, 204, 0.05); }
+
 body {
-  margin: 0; }
+  margin: 0;
+  background-color: var(--main-background-color); }
 
 ul {
   list-style: none;
@@ -11,3 +16,10 @@ ul {
 
 a {
   text-decoration: none; }
+
+:root {
+  --header-background-color: #434CCC;
+  --main-background-color: rgba(67, 76, 204, 0.05); }
+
+.page_header {
+  background-color: var(--header-background-color); }
