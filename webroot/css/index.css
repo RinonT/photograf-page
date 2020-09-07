@@ -11,7 +11,7 @@ body {
   font-size: 16px;
   line-height: 24px; }
 
-.page_container {
+.page_contents_container {
   margin-left: 16px;
   margin-right: 16px; }
 
@@ -25,6 +25,12 @@ ul {
 
 a {
   text-decoration: none; }
+
+label {
+  display: block; }
+
+fieldset {
+  border-color: transparent; }
 
 @media (min-width: 1114px) {
   .page_container {
