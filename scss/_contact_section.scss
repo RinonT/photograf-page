@@ -25,7 +25,7 @@
 
 .email_adress_input {
   border: 2px rgba(128, 128, 128, 0.39);
-  min-width: 90%;
+  min-width: 90%; 
   margin-top: 12px;
   padding: 13px;   
 }
@@ -43,4 +43,39 @@
   padding: 13px;
   padding-left: 45px;
   padding-right: 45px;
+}
+
+
+@media(min-width: $desktop-breakpoint) {
+  .contact_section_container {
+    @include flex-row-alignement;
+    flex-wrap: wrap;
+  }
+
+  .contact_section_header {
+    flex-basis: 50%;
+  }
+
+  .contact_section_sub-heading {
+    max-width: 450px;
+    font-size: 52px;
+    line-height: 64px;
+  }
+
+  .contact_form {
+    @include flex-row-alignement;
+    flex-basis: 50%;
+    margin-top: 108px;
+  }
+  
+  .email_adress_input {
+    min-width: 346px;
+  }
+
+  .submit_button {
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
 }

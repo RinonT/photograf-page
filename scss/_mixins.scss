@@ -28,6 +28,7 @@
 @mixin flex-row-alignement {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 @mixin flex-column-alignement {

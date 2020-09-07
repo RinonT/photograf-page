@@ -15,8 +15,7 @@
 }
 
 .page_header_container {
-  @include flex-row-alignement;
-  justify-content: space-between;
+  @include flex-row-alignement; 
 }
 
 .page_navigation {

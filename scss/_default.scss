@@ -39,7 +39,7 @@ fieldset {
 }
 
 @media(min-width: $desktop-breakpoint) {
-  .page_container {
+  .page_contents_container {
     max-width: $desktop-breakpoint;
     margin-left: auto;
     margin-right: auto;
