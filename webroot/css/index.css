@@ -2,7 +2,8 @@
   --header-background-color: #434CCC;
   --main-background-color: rgba(67, 76, 204, 0.05);
   --text-primary-color: #000000;
-  --text-color-white: #FFFFFF; }
+  --text-color-white: #FFFFFF;
+  --yellow-background: #FFDD78; }
 
 body {
   font-family: DM Sans;
@@ -42,7 +43,8 @@ fieldset {
   --header-background-color: #434CCC;
   --main-background-color: rgba(67, 76, 204, 0.05);
   --text-primary-color: #000000;
-  --text-color-white: #FFFFFF; }
+  --text-color-white: #FFFFFF;
+  --yellow-background: #FFDD78; }
 
 .page_header {
   background-color: var(--header-background-color); }
@@ -128,3 +130,13 @@ details.show_menu span {
     text-transform: unset;
     color: var(--text-color-white);
     opacity: 1; } }
+
+:root {
+  --header-background-color: #434CCC;
+  --main-background-color: rgba(67, 76, 204, 0.05);
+  --text-primary-color: #000000;
+  --text-color-white: #FFFFFF;
+  --yellow-background: #FFDD78; }
+
+.contact_section {
+  background-color: var(--yellow-background); }

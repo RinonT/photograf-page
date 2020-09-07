@@ -3,9 +3,11 @@
   --main-background-color: rgba(67, 76, 204, 0.05);
   --text-primary-color: #000000;
   --text-color-white: #FFFFFF;
+  --yellow-background: #FFDD78;
 }
 
 $header-background: var(--header-background-color);
 $page-background: var(--main-background-color);
 $default-text-color: var(--text-primary-color);
 $header-text-color: var(--text-color-white);
+$contact-section-bg: var(--yellow-background);
