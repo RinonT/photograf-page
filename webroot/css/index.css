@@ -5,6 +5,7 @@
   --text-color-white: #FFFFFF; }
 
 body {
+  font-family: DM Sans;
   margin: 0;
   background-color: var(--main-background-color);
   font-size: 16px;
@@ -41,6 +42,7 @@ a {
   background-color: var(--header-background-color); }
 
 .page_header_heading {
+  font-family: DM Serif Display;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -61,23 +63,21 @@ a {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 100px;
+  min-width: 25%;
   height: max-content;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-  transform: translate(200%, -100%);
-  transition: transform 0.3s; }
+  transform: translate(-200%, -150%); }
 
 details.show_menu summary::-webkit-details-marker {
   display: none; }
 
 details.show_menu summary {
-  display: none;
   padding: 32px;
   padding-right: 16px;
   background-image: url(../images/icon_menu.svg);
   background-repeat: no-repeat;
   background-position-y: 24px;
-  background-position-x: 16px;
+  background-position-x: 24px;
   outline: none; }
 
 details.show_menu p,
@@ -85,7 +85,7 @@ details.show_menu span {
   display: none; }
 
 .show_menu[open] ~ .page_navigation {
-  transform: translate(200%, 0%); }
+  transform: translate(75%, 0%); }
 
 .page_links {
   font-style: normal;
@@ -96,7 +96,14 @@ details.show_menu span {
   text-transform: uppercase;
   opacity: 0.5; }
 
+.page_links:hover {
+  color: var(--header-background-color);
+  opacity: 1; }
+
 @media (min-width: 1114px) {
+  .page_header_heading {
+    font-size: 40px;
+    line-height: 48px; }
   details.show_menu {
     display: none; }
   .page_navigation {
@@ -104,11 +111,14 @@ details.show_menu span {
     background-color: unset;
     position: unset;
     box-shadow: unset;
-    transform: translate(-50%, 0%); }
+    transform: translate(0%, 0%);
+    padding-top: 40px; }
   .page_navigation_tabs {
-    max-width: 324px;
+    min-width: 324px;
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
   .page_links {
-    text-transform: unset; } }
+    text-transform: unset;
+    color: var(--text-color-white);
+    opacity: 1; } }
