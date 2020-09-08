@@ -152,6 +152,9 @@ details.show_menu span {
   padding-top: 63px;
   padding-bottom: 54px; }
 
+.contact_section_container {
+  max-width: 670px; }
+
 .contact_section_heading {
   font-size: 16px;
   line-height: 24px;
@@ -168,7 +171,7 @@ details.show_menu span {
 
 .email_adress_input {
   border: 2px rgba(128, 128, 128, 0.39);
-  min-width: 90%;
+  min-width: 75%;
   margin-top: 12px;
   padding: 13px; }
 
@@ -187,6 +190,7 @@ details.show_menu span {
 
 @media (min-width: 1114px) {
   .contact_section_container {
+    max-width: 1114px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
