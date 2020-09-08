@@ -84,15 +84,23 @@ footer .page_links:hover {
     flex-wrap: wrap;
   }
   
-  .footer_article{
-    flex-basis: 30%;
+  .footer_article{ 
     padding-top: 70px;
   }
   
   .footer_article:nth-of-type(1) {
+    flex-basis: 40%;
     max-width: 270px;
   }
+
+  .footer_article:nth-of-type(2) {
+    flex-basis: 25%; 
+  }
   
+  .footer_article:nth-of-type(3) {
+    flex-basis: 35%;
+  }
+
   .footer_article:nth-of-type(4) {
     flex-basis: 100%;
   }
