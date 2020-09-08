@@ -5,6 +5,7 @@
   --text-color-white: #FFFFFF;
   --yellow-background: #FFDD78;
   --text-secondary-color: rgba(0, 0, 0, 0.5);;
+  --beauty-section-background:  rgba(67, 76, 204, 0.05);
 }
 
 $header-background: var(--header-background-color);
@@ -13,3 +14,4 @@ $default-text-color: var(--text-primary-color);
 $header-text-color: var(--text-color-white);
 $contact-section-bg: var(--yellow-background);
 $second-text-color: var(--text-secondary-color);
+$main-bg-color: var(--beauty-section-background);
