@@ -162,6 +162,63 @@ details.show_menu span {
   --yellow-background: #FFDD78;
   --text-secondary-color: rgba(0, 0, 0, 0.5); }
 
+.beauty_section_heading {
+  font-size: 52px;
+  line-height: 64px;
+  padding-bottom: 65px; }
+
+.beauty_section_text {
+  font-size: 18px;
+  line-height: 32px;
+  padding-bottom: 50px; }
+
+.beauty_section_text:last-of-type {
+  color: var(--text-secondary-color); }
+
+.images_container {
+  padding-top: 82px; }
+
+.photographs_info {
+  padding-top: 92px;
+  padding-bottom: 75px; }
+
+.photographs_info_details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.photograph_info_detail_list {
+  flex-basis: 50%;
+  padding-bottom: 40px; }
+
+.photograph_info_detail_list:nth-of-type(3) {
+  max-width: 100px; }
+
+.photograph_info_detail_list span:nth-of-type(2),
+.photograph_info_detail_list time {
+  display: block;
+  font-weight: bold; }
+
+.article_heading {
+  font-size: 40px;
+  line-height: 48px;
+  padding-bottom: 31px; }
+
+.beauty_section_article .social_media_tabs {
+  padding-bottom: 105px; }
+
+.beauty_section_article .social_media_icons_lists {
+  padding-top: 0; }
+
+:root {
+  --header-background-color: #434CCC;
+  --main-background-color: rgba(67, 76, 204, 0.05);
+  --text-primary-color: #000000;
+  --text-color-white: #FFFFFF;
+  --yellow-background: #FFDD78;
+  --text-secondary-color: rgba(0, 0, 0, 0.5); }
+
 .contact_section {
   background-color: var(--yellow-background);
   padding-top: 63px;

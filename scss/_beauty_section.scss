@@ -1,1 +1,64 @@
 @import "variables";
+
+.beauty_section_heading {
+  font-size: 52px;
+  line-height: 64px;
+  padding-bottom: 65px;
+}
+
+.beauty_section_text { 
+  font-size: 18px;
+  line-height: 32px;
+  padding-bottom: 50px;
+}
+
+.beauty_section_text:last-of-type {
+   color: $second-text-color;
+}
+
+.images_container {
+  padding-top: 82px;
+}
+
+.photographs_info {
+  padding-top: 92px;
+  padding-bottom: 75px;
+}
+
+.photographs_info_details {
+  @include flex-row-alignement;
+  flex-wrap: wrap;
+}
+
+.photograph_info_detail_list {
+  flex-basis: 50%;
+  padding-bottom: 40px;
+}
+
+.photograph_info_detail_list:nth-of-type(3) {
+  max-width: 100px;
+}
+
+.photograph_info_detail_list {
+  & span:nth-of-type(2),
+  & time {
+    display: block;
+    font-weight: bold;
+  }
+}
+.article_heading {
+  font-size: 40px;
+  line-height: 48px;
+  padding-bottom: 31px;
+}
+
+.beauty_section_article {
+  & .social_media_tabs {
+    padding-bottom: 105px;
+  }
+
+  & .social_media_icons_lists {
+    padding-top: 0;
+  }
+}
+
