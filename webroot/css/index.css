@@ -77,7 +77,8 @@ fieldset {
   font-size: 24px;
   line-height: 32px;
   text-transform: uppercase;
-  color: var(--text-color-white); }
+  color: var(--text-color-white);
+  margin-top: 16px; }
 
 .page_header_container {
   display: flex;
@@ -178,7 +179,9 @@ details.show_menu span {
 
 .contact_section_sub-heading {
   font-size: 40px;
-  line-height: 48px; }
+  line-height: 48px;
+  margin-top: 19px;
+  margin-bottom: 44px; }
 
 .email_adress_label {
   font-weight: bold;
@@ -239,7 +242,8 @@ details.show_menu span {
 
 footer {
   background-color: var(--text-color-white);
-  color: var(--text-secondary-color); }
+  color: var(--text-secondary-color);
+  padding-top: 75px; }
 
 .footer_article {
   padding-bottom: 79px; }
@@ -252,7 +256,7 @@ footer {
   padding-bottom: 24px; }
 
 .social_media_icons_lists {
-  padding-top: 39px; }
+  padding-top: 30px; }
 
 .page_navigation_tabs_list:nth-of-type(1) {
   padding-bottom: 30px; }

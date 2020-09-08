@@ -12,6 +12,7 @@
   line-height: 32px;
   text-transform: uppercase;
   color: $header-text-color;
+  margin-top: 16px;
 }
 
 .page_header_container {
@@ -33,7 +34,7 @@
     box-shadow: 0 0 50px rgba(0,0,0,.5);
     transform: translate(-200%, -150%); 
   }
-  
+
   & .page_links {
     font-style: normal;
     font-weight: bold;
