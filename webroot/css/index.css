@@ -306,6 +306,8 @@ footer .page_links:hover {
   color: var(--text-primary-color); }
 
 @media (min-width: 1114px) {
+  footer {
+    padding-top: 0; }
   .footer_container {
     display: flex;
     flex-direction: row;

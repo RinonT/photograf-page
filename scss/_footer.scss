@@ -79,6 +79,10 @@ footer .page_links:hover {
 }
 
 @media(min-width: $desktop-breakpoint) {
+  footer {
+    padding-top: 0;
+  }
+  
   .footer_container {
     @include flex-row-alignement;
     flex-wrap: wrap;
