@@ -18,18 +18,36 @@
   @include flex-row-alignement; 
 }
 
-.page_navigation {
-  padding: 1rem;
-  background-color: #f8f8f8;
-  position: absolute;
-  z-index: 3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  min-width: 25%;
-  height: max-content; 
-  box-shadow: 0 0 50px rgba(0,0,0,.5);
-  transform: translate(-200%, -150%); 
+// Wrap some selectors in the ".page_header" because those classes are still used in some different sections.
+.page_header {
+  & .page_navigation {
+    padding: 1rem;
+    background-color: #f8f8f8;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    min-width: 25%;
+    height: max-content; 
+    box-shadow: 0 0 50px rgba(0,0,0,.5);
+    transform: translate(-200%, -150%); 
+  }
+  
+  & .page_links {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: $default-text-color;
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+   
+  & .page_links:hover {
+    color: $header-background;
+    opacity: 1;
+  }
 }
 
 details.show_menu {
@@ -40,7 +58,7 @@ details.show_menu {
   & summary {   
     padding: 32px;
     padding-right: 16px;
-    background-image: url(../images/icon_menu.svg);
+    background-image: url(../icons/icon_menu.svg);
     background-repeat: no-repeat;
     background-position-y: 24px;
     background-position-x: 24px;
@@ -53,27 +71,10 @@ details.show_menu {
   }
 }
 
-
-
 .show_menu[open] ~ .page_navigation {
   transform: translate(75%, 0%); 
 }
   
-.page_links {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  color: $default-text-color;
-  text-transform: uppercase;
-  opacity: 0.5;
-}
- 
-.page_links:hover {
-  color: $header-background;
-  opacity: 1;
-}
-
 @media(min-width: $desktop-breakpoint) {
   .page_header_heading {
     font-size: 40px;
@@ -84,26 +85,26 @@ details.show_menu {
     display: none;
   }
 
-  .page_navigation { 
-    width: unset;
-    background-color: unset;
-    position: unset;
-    box-shadow: unset;
-    transform: translate(0%, 0%);
-    padding-top: 40px;
-  }
+  .page_header {
+    & .page_navigation { 
+      width: unset;
+      background-color: unset;
+      position: unset;
+      box-shadow: unset;
+      transform: translate(0%, 0%);
+      padding-top: 40px;
+    }
   
-  .page_navigation_tabs {
-    min-width: 324px;
-    @include flex-row-alignement;
-    justify-content: space-between;
-  }
+    & .page_navigation_tabs {
+      min-width: 324px;
+      @include flex-row-alignement;
+      justify-content: space-between;
+    }
 
-  .page_links {
-    text-transform: unset;
-    color: $header-text-color;
-    opacity: 1;
+    & .page_links {
+      text-transform: unset;
+      color: $header-text-color;
+      opacity: 1;
+    }
   }
-
-  
 }
