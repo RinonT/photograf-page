@@ -182,6 +182,11 @@ details.show_menu span {
 .images_container {
   padding-top: 82px; }
 
+.all_photographs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
 .photographs_info {
   padding-top: 92px;
   padding-bottom: 75px; }

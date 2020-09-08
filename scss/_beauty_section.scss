@@ -25,6 +25,10 @@
   padding-top: 82px;
 }
 
+.all_photographs {
+  @include flex-row-alignement;
+}
+
 .photographs_info {
   padding-top: 92px;
   padding-bottom: 75px;
