@@ -22,7 +22,9 @@ h3 {
   font-family: DM Serif Display;
   font-style: normal;
   font-weight: normal;
+  margin: 0;
 }
+
 p {
   @include reset(ul);
 }
