@@ -1,0 +1,67 @@
+@import "variables";
+
+footer {
+  background-color: $header-text-color;
+  color: $second-text-color;
+}
+
+.footer_article {
+  padding-bottom: 79px;
+}
+
+.footer_article_heading {
+  color: $default-text-color;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+.social_media_icons_lists {
+  @include flex-row-alignement;
+  justify-content: unset;
+}
+
+.social_meadia_icon {
+  margin-right: 16px;
+}
+
+footer .page_links {
+  color: $second-text-color;
+  mix-blend-mode: normal;
+}
+
+footer .page_links:hover {
+  color: $default-text-color;
+  mix-blend-mode: unset;
+
+}
+
+.user_samples_list {
+  @include flex-row-alignement;
+  justify-content: unset;
+}
+
+.user_samples_list img {
+  max-width: 70px;
+  margin-right: 32px;
+  margin-bottom: 24px;
+}
+
+.image_description {
+  margin: 0;
+}
+
+.user_samples_list { 
+  & span,
+  & time {
+  display: block;
+  }
+
+  & time {
+    font-weight: bold;
+    font-size: 12px;
+    color: $default-text-color;
+  }
+}
+
+ 

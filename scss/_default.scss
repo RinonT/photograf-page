@@ -2,6 +2,8 @@
  
 body {
   font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   margin: 0;
@@ -13,14 +15,18 @@ body {
   margin-right: 16px;
 }
 
-body,
+
 h1, 
 h2,
 h3 {
+  font-family: DM Serif Display;
   font-style: normal;
   font-weight: normal;
 }
- 
+p {
+  @include reset(ul);
+}
+
 ul {
   @include reset(ul);
 }
