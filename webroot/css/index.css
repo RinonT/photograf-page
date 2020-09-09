@@ -98,7 +98,7 @@ fieldset {
   min-width: 100%;
   height: 25%;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-  transition: transform 0.2s; }
+  transition: position 0.2s; }
 
 .page_header .page_links {
   font-style: normal;
@@ -141,7 +141,8 @@ details.show_menu span {
   details.show_menu {
     display: none; }
   .page_header .page_navigation {
-    width: unset;
+    min-width: unset;
+    height: unset;
     background-color: unset;
     position: unset;
     box-shadow: unset;
@@ -401,13 +402,13 @@ footer {
   text-transform: uppercase;
   padding-bottom: 24px; }
 
-.social_media_icons_lists {
+footer .social_media_icons_lists {
   padding-top: 30px; }
 
-.page_navigation_tabs_list:nth-of-type(1) {
+footer .page_navigation_tabs_list:nth-of-type(1) {
   padding-bottom: 30px; }
 
-.page_navigation_tabs_list:not(:first-of-type) {
+footer .page_navigation_tabs_list:not(:first-of-type) {
   margin-bottom: 16px; }
 
 .social_media_icons_lists {

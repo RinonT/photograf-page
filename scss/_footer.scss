@@ -18,18 +18,19 @@ footer {
   padding-bottom: 24px;
 }
 
-.social_media_icons_lists {
-  padding-top: 30px;
-}
- 
-.page_navigation_tabs_list:nth-of-type(1) {
-  padding-bottom: 30px;
-}
+footer {
+  & .social_media_icons_lists {
+    padding-top: 30px;
+  }
+  
+  & .page_navigation_tabs_list:nth-of-type(1) {
+    padding-bottom: 30px;
+  }
 
-.page_navigation_tabs_list:not(:first-of-type) {
-  margin-bottom: 16px;
+  & .page_navigation_tabs_list:not(:first-of-type) {
+    margin-bottom: 16px;
+  }
 }
-
 .social_media_icons_lists {
   @include flex-row-alignement;
   justify-content: unset;

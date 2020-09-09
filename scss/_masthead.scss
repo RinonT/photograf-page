@@ -32,7 +32,7 @@
     min-width: 100%;
     height: 25%; 
     box-shadow: 0 0 50px rgba(0,0,0,.5); 
-    transition: transform 0.2s;
+    transition: position 0.2s;
   }
 
   & .page_links {
@@ -90,7 +90,8 @@ details.show_menu {
 
   .page_header {
     & .page_navigation { 
-      width: unset;
+      min-width: unset;
+      height: unset;
       background-color: unset;
       position: unset;
       box-shadow: unset;
