@@ -93,12 +93,12 @@ fieldset {
   position: absolute;
   z-index: 3;
   top: 0;
-  left: 0;
+  left: 125%;
   bottom: 0;
-  min-width: 25%;
-  height: max-content;
+  min-width: 100%;
+  height: 25%;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-  transform: translate(-200%, -150%); }
+  transition: transform 0.2s; }
 
 .page_header .page_links {
   font-style: normal;
@@ -123,14 +123,16 @@ details.show_menu summary {
   background-repeat: no-repeat;
   background-position-y: 24px;
   background-position-x: 24px;
-  outline: none; }
+  outline: none;
+  height: 100%; }
 
 details.show_menu p,
 details.show_menu span {
   display: none; }
 
 .show_menu[open] ~ .page_navigation {
-  transform: translate(75%, 0%); }
+  top: 10%;
+  left: 0%; }
 
 @media (min-width: 1114px) {
   .page_header_heading {
