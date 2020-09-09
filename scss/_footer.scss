@@ -39,6 +39,21 @@ footer {
   margin-right: 16px;
 }
 
+.social_meadia_link {
+  & svg {
+    fill: $default-text-color;
+  }
+
+  & svg:hover {
+    fill: $header-background;
+  }
+}
+
+// Change the color of the instagram when it is hovered over
+.social_meadia_icon:last-of-type svg:hover {
+  fill: #F56040;
+}
+
 footer .page_links {
   color: $second-text-color;
   mix-blend-mode: normal;
