@@ -73,7 +73,6 @@ details.show_menu {
 }
 
 // This is a prevention if the Javascript is not suppported
-
 .show_menu[open] ~ .page_navigation {
   top: 10%; // After the header's background
   left: 0%; 
@@ -87,6 +86,7 @@ details.show_menu {
   .page_header_heading {
     font-size: 40px;
     line-height: 48px;
+    margin-bottom: 16px;
   }
 
   details.show_menu {
@@ -101,13 +101,13 @@ details.show_menu {
       position: unset;
       box-shadow: unset;
       transform: translate(0%, 0%);
-      padding-top: 40px;
+      margin-top: 27px;
+      padding-top: 0;
     }
   
     & .page_navigation_tabs {
       min-width: 324px;
-      @include flex-row-alignement;
-      justify-content: space-between;
+      @include flex-row-alignement; 
     }
 
     & .page_links {
@@ -115,5 +115,15 @@ details.show_menu {
       color: $header-text-color;
       opacity: 1;
     }
+
+    & .page_links:hover {
+      color: #F56040;
+      text-transform: uppercase;
+    }
+  }
+
+  // Remove the opacity in case it will still be applied to the desctop after closing the menu in the mobile
+  .page_navigation.close {
+    opacity: 1;
   }
 }

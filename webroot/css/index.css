@@ -139,7 +139,8 @@ details.show_menu span {
 @media (min-width: 1114px) {
   .page_header_heading {
     font-size: 40px;
-    line-height: 48px; }
+    line-height: 48px;
+    margin-bottom: 16px; }
   details.show_menu {
     display: none; }
   .page_header .page_navigation {
@@ -149,16 +150,21 @@ details.show_menu span {
     position: unset;
     box-shadow: unset;
     transform: translate(0%, 0%);
-    padding-top: 40px; }
+    margin-top: 27px;
+    padding-top: 0; }
   .page_header .page_navigation_tabs {
     min-width: 324px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     justify-content: space-between; }
   .page_header .page_links {
     text-transform: unset;
     color: var(--text-color-white);
+    opacity: 1; }
+  .page_header .page_links:hover {
+    color: #F56040;
+    text-transform: uppercase; }
+  .page_navigation.close {
     opacity: 1; } }
 
 :root {
