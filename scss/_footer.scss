@@ -10,6 +10,10 @@ footer {
   padding-bottom: 79px;
 }
 
+.footer_article:last-of-type {
+  padding-bottom: 29px;
+}
+
 .footer_article_heading {
   color: $default-text-color;
   font-size: 24px;
@@ -31,6 +35,7 @@ footer {
     margin-bottom: 16px;
   }
 }
+
 .social_media_icons_lists {
   @include flex-row-alignement;
   justify-content: unset;
@@ -156,6 +161,11 @@ footer .page_links:hover {
   .page_information {
     @include flex-row-alignement;
   }
+
+  .footer_article:last-of-type {
+    padding-bottom: 75px;
+  }
+  
   .page_information .footer_article_text:last-of-type {
     padding-top: 27px;
   }
