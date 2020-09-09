@@ -44,12 +44,12 @@
     text-transform: uppercase;
     opacity: 0.5;
   }
-   
-  & .page_links:hover {
-    color: $header-background;
-    opacity: 1;
-  }
 }
+
+.page_links:hover {
+  color: $header-background;
+  opacity: 1;
+} 
 
 details.show_menu {
   & summary::-webkit-details-marker {
