@@ -1,0 +1,40 @@
+@import "variables";
+
+main {
+  background-color:  $main-bg-color;
+}
+
+.main_header {
+  & .page_links { 
+  font-size: 16px;
+  line-height: 24px;
+  color: $second-text-color; 
+    & svg {
+      fill: $default-text-color; 
+    }
+  }
+
+  .page_links:hover {
+    color: $header-background;
+    
+    & svg:hover{
+      fill: $header-background; 
+    }
+  }
+
+  & span {
+    padding-left: 8px;
+  }
+}
+
+.main_header_heading {
+  font-size: 52px;
+  line-height: 64px;
+  padding-bottom: 50px;
+ 
+}
+
+.main_header_text {
+  font-size: 18px;
+  line-height: 32px;
+}
