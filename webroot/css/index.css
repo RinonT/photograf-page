@@ -200,8 +200,16 @@ main {
   padding-bottom: 50px; }
 
 .main_header_text {
+  max-width: 586px;
   font-size: 18px;
   line-height: 32px; }
+
+@media (min-width: 1114px) {
+  .main_header_heading {
+    max-width: 586px;
+    font-size: 72px;
+    line-height: 80px;
+    padding-bottom: 16px; } }
 
 :root {
   --header-background-color: #434CCC;
