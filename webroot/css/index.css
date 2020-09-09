@@ -1,3 +1,39 @@
+@font-face {
+  font-family: "dm sans";
+  font-weight: 700;
+  font-style: normal;
+  src: local("DM Serif"), local("DM Serif"), url("../fonts/dm_sans_bold.woff2") format("woff2"), url("../fonts/ dm_sans_bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "dm sans";
+  font-weight: 400;
+  font-style: normal;
+  src: local("DM Sans"), local("DM Sans"), url("../fonts/dm_sans_regular.woff2") format("woff2"), url("../fonts/ dm_sans_regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "dm sans display";
+  font-weight: 400;
+  font-style: normal;
+  src: local("DM sans Display"), local("DM sans Display"), url("../fonts/dm_serif_display_400.woff2") format("woff2"), url("../fonts/ dm_serif_display_400.woff") format("woff"); }
+
+@font-face {
+  font-family: "dm sans";
+  font-weight: 700;
+  font-style: normal;
+  src: local("DM Serif"), local("DM Serif"), url("../fonts/dm_sans_bold.woff2") format("woff2"), url("../fonts/ dm_sans_bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "dm sans";
+  font-weight: 400;
+  font-style: normal;
+  src: local("DM Sans"), local("DM Sans"), url("../fonts/dm_sans_regular.woff2") format("woff2"), url("../fonts/ dm_sans_regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "dm sans display";
+  font-weight: 400;
+  font-style: normal;
+  src: local("DM sans Display"), local("DM sans Display"), url("../fonts/dm_serif_display_400.woff2") format("woff2"), url("../fonts/ dm_serif_display_400.woff") format("woff"); }
+
 :root {
   --header-background-color: #434CCC;
   --main-background-color: rgba(67, 76, 204, 0.05);
@@ -8,7 +44,7 @@
   --beauty-section-background:  rgba(67, 76, 204, 0.05); }
 
 body {
-  font-family: DM Sans;
+  font-family: "dm sans";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -23,7 +59,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: DM Serif Display;
+  font-family: "dm sans display";
   font-style: normal;
   font-weight: normal;
   margin: 0; }
@@ -60,6 +96,24 @@ fieldset {
     margin-left: auto;
     margin-right: auto; } }
 
+@font-face {
+  font-family: "dm sans";
+  font-weight: 700;
+  font-style: normal;
+  src: local("DM Serif"), local("DM Serif"), url("../fonts/dm_sans_bold.woff2") format("woff2"), url("../fonts/ dm_sans_bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "dm sans";
+  font-weight: 400;
+  font-style: normal;
+  src: local("DM Sans"), local("DM Sans"), url("../fonts/dm_sans_regular.woff2") format("woff2"), url("../fonts/ dm_sans_regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "dm sans display";
+  font-weight: 400;
+  font-style: normal;
+  src: local("DM sans Display"), local("DM sans Display"), url("../fonts/dm_serif_display_400.woff2") format("woff2"), url("../fonts/ dm_serif_display_400.woff") format("woff"); }
+
 :root {
   --header-background-color: #434CCC;
   --main-background-color: rgba(67, 76, 204, 0.05);
@@ -73,9 +127,6 @@ fieldset {
   background-color: var(--header-background-color); }
 
 .page_header_heading {
-  font-family: DM Serif Display;
-  font-style: normal;
-  font-weight: normal;
   font-size: 24px;
   line-height: 32px;
   text-transform: uppercase;
@@ -100,7 +151,6 @@ fieldset {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); }
 
 .page_header .page_links {
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
@@ -167,6 +217,24 @@ details.show_menu span {
   .page_navigation.close {
     opacity: 1; } }
 
+@font-face {
+  font-family: "dm sans";
+  font-weight: 700;
+  font-style: normal;
+  src: local("DM Serif"), local("DM Serif"), url("../fonts/dm_sans_bold.woff2") format("woff2"), url("../fonts/ dm_sans_bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "dm sans";
+  font-weight: 400;
+  font-style: normal;
+  src: local("DM Sans"), local("DM Sans"), url("../fonts/dm_sans_regular.woff2") format("woff2"), url("../fonts/ dm_sans_regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "dm sans display";
+  font-weight: 400;
+  font-style: normal;
+  src: local("DM sans Display"), local("DM sans Display"), url("../fonts/dm_serif_display_400.woff2") format("woff2"), url("../fonts/ dm_serif_display_400.woff") format("woff"); }
+
 :root {
   --header-background-color: #434CCC;
   --main-background-color: rgba(67, 76, 204, 0.05);
@@ -210,6 +278,24 @@ main {
     font-size: 72px;
     line-height: 80px;
     padding-bottom: 16px; } }
+
+@font-face {
+  font-family: "dm sans";
+  font-weight: 700;
+  font-style: normal;
+  src: local("DM Serif"), local("DM Serif"), url("../fonts/dm_sans_bold.woff2") format("woff2"), url("../fonts/ dm_sans_bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "dm sans";
+  font-weight: 400;
+  font-style: normal;
+  src: local("DM Sans"), local("DM Sans"), url("../fonts/dm_sans_regular.woff2") format("woff2"), url("../fonts/ dm_sans_regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "dm sans display";
+  font-weight: 400;
+  font-style: normal;
+  src: local("DM sans Display"), local("DM sans Display"), url("../fonts/dm_serif_display_400.woff2") format("woff2"), url("../fonts/ dm_serif_display_400.woff") format("woff"); }
 
 :root {
   --header-background-color: #434CCC;
@@ -315,6 +401,24 @@ main {
     max-height: 85px;
     opacity: 0.5; } }
 
+@font-face {
+  font-family: "dm sans";
+  font-weight: 700;
+  font-style: normal;
+  src: local("DM Serif"), local("DM Serif"), url("../fonts/dm_sans_bold.woff2") format("woff2"), url("../fonts/ dm_sans_bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "dm sans";
+  font-weight: 400;
+  font-style: normal;
+  src: local("DM Sans"), local("DM Sans"), url("../fonts/dm_sans_regular.woff2") format("woff2"), url("../fonts/ dm_sans_regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "dm sans display";
+  font-weight: 400;
+  font-style: normal;
+  src: local("DM sans Display"), local("DM sans Display"), url("../fonts/dm_serif_display_400.woff2") format("woff2"), url("../fonts/ dm_serif_display_400.woff") format("woff"); }
+
 :root {
   --header-background-color: #434CCC;
   --main-background-color: rgba(67, 76, 204, 0.05);
@@ -333,7 +437,7 @@ main {
   max-width: 670px; }
 
 .contact_section_heading {
-  font-family: DM Sans;
+  font-family: "dm sans";
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.3em;
@@ -393,6 +497,24 @@ main {
     margin-top: 40px;
     padding-top: 10px;
     padding-bottom: 10px; } }
+
+@font-face {
+  font-family: "dm sans";
+  font-weight: 700;
+  font-style: normal;
+  src: local("DM Serif"), local("DM Serif"), url("../fonts/dm_sans_bold.woff2") format("woff2"), url("../fonts/ dm_sans_bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "dm sans";
+  font-weight: 400;
+  font-style: normal;
+  src: local("DM Sans"), local("DM Sans"), url("../fonts/dm_sans_regular.woff2") format("woff2"), url("../fonts/ dm_sans_regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "dm sans display";
+  font-weight: 400;
+  font-style: normal;
+  src: local("DM sans Display"), local("DM sans Display"), url("../fonts/dm_serif_display_400.woff2") format("woff2"), url("../fonts/ dm_serif_display_400.woff") format("woff"); }
 
 :root {
   --header-background-color: #434CCC;
