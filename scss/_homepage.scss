@@ -4,7 +4,7 @@ main {
   background-color:  $main-bg-color;
 }
 
-.main_header {
+.homepage {
   & .page_links { 
   font-size: 16px;
   line-height: 24px;
@@ -27,21 +27,21 @@ main {
   }
 }
 
-.main_header_heading {
+.homepage_heading {
   font-size: 52px;
   line-height: 64px;
   padding-bottom: 50px;
  
 }
 
-.main_header_text {
+.homepage_text {
   max-width: 586px;
   font-size: 18px;
   line-height: 32px;
 }
 
 @media(min-width: $desktop-breakpoint) { 
-  .main_header_heading {
+  .homepage_heading {
     max-width: 586px;
     font-size: 72px;
     line-height: 80px;

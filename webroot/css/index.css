@@ -247,33 +247,33 @@ details.show_menu span {
 main {
   background-color: var(--beauty-section-background); }
 
-.main_header .page_links {
+.homepage .page_links {
   font-size: 16px;
   line-height: 24px;
   color: var(--text-secondary-color); }
-  .main_header .page_links svg {
+  .homepage .page_links svg {
     fill: var(--text-primary-color); }
 
-.main_header .page_links:hover {
+.homepage .page_links:hover {
   color: var(--header-background-color); }
-  .main_header .page_links:hover svg:hover {
+  .homepage .page_links:hover svg:hover {
     fill: var(--header-background-color); }
 
-.main_header span {
+.homepage span {
   padding-left: 8px; }
 
-.main_header_heading {
+.homepage_heading {
   font-size: 52px;
   line-height: 64px;
   padding-bottom: 50px; }
 
-.main_header_text {
+.homepage_text {
   max-width: 586px;
   font-size: 18px;
   line-height: 32px; }
 
 @media (min-width: 1114px) {
-  .main_header_heading {
+  .homepage_heading {
     max-width: 586px;
     font-size: 72px;
     line-height: 80px;
@@ -305,14 +305,6 @@ main {
   --yellow-background: #FFDD78;
   --text-secondary-color: rgba(0, 0, 0, 0.5);
   --beauty-section-background:  rgba(67, 76, 204, 0.05); }
-
-.beauty_section_text {
-  font-size: 18px;
-  line-height: 32px;
-  padding-bottom: 50px; }
-
-.beauty_section_text:last-of-type {
-  color: var(--text-secondary-color); }
 
 .all_photographs {
   display: flex;
@@ -368,28 +360,18 @@ main {
   line-height: 48px;
   padding-bottom: 31px; }
 
-.beauty_section_article .social_media_tabs {
-  padding-bottom: 105px; }
-
-.beauty_section_article .social_media_icons_lists {
-  padding-top: 0; }
-
 @media (min-width: 1114px) {
-  .beauty_section_heading {
-    max-width: 457px;
-    font-size: 72px;
-    line-height: 80px; }
-  .beauty_section_container {
+  .blog_section_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
-  .beauty_section_article:first-of-type {
+  .blog_section_article:first-of-type {
     grid-row: 1;
     grid-column: 1/3; }
-  .beauty_section_article.photographs_info {
+  .blog_section_article.photographs_info {
     grid-row: 2;
     grid-column: 1/2;
     padding-top: 0; }
-  .beauty_section_article.exploration {
+  .blog_section_article.exploration {
     grid-row: 2;
     grid-column: 2/3; }
   .photograph_info_detail_list:nth-of-type(3) {
@@ -400,6 +382,47 @@ main {
     max-width: 100%;
     max-height: 85px;
     opacity: 0.5; } }
+
+@font-face {
+  font-family: "dm sans";
+  font-weight: 700;
+  font-style: normal;
+  src: local("DM Serif"), local("DM Serif"), url("../fonts/dm_sans_bold.woff2") format("woff2"), url("../fonts/ dm_sans_bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "dm sans";
+  font-weight: 400;
+  font-style: normal;
+  src: local("DM Sans"), local("DM Sans"), url("../fonts/dm_sans_regular.woff2") format("woff2"), url("../fonts/ dm_sans_regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "dm sans display";
+  font-weight: 400;
+  font-style: normal;
+  src: local("DM sans Display"), local("DM sans Display"), url("../fonts/dm_serif_display_400.woff2") format("woff2"), url("../fonts/ dm_serif_display_400.woff") format("woff"); }
+
+:root {
+  --header-background-color: #434CCC;
+  --main-background-color: rgba(67, 76, 204, 0.05);
+  --text-primary-color: #000000;
+  --text-color-white: #FFFFFF;
+  --yellow-background: #FFDD78;
+  --text-secondary-color: rgba(0, 0, 0, 0.5);
+  --beauty-section-background:  rgba(67, 76, 204, 0.05); }
+
+.blog_section_text {
+  font-size: 18px;
+  line-height: 32px;
+  padding-bottom: 50px; }
+
+.blog_section_text:last-of-type {
+  color: var(--text-secondary-color); }
+
+.blog_section_article .social_media_tabs {
+  padding-bottom: 105px; }
+
+.blog_section_article .social_media_icons_lists {
+  padding-top: 0; }
 
 @font-face {
   font-family: "dm sans";
