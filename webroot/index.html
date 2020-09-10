@@ -74,6 +74,7 @@
       <div class="page_contents_container portfolio_section_container">
         <article class="portfolio_section_article all_images_container">
           <div class="images_container">
+            <nav class="images_navigation">
             <ul class="all_photographs">
               <li class="image_slides">
                 <span class="image_number">1/8</span>
@@ -93,7 +94,7 @@
               </li>
               <li class="image_slides">
                 <span class="image_number">5/8</span>
-                <img class="photograph_sample" src="./images/passage_xs.jpg" alt="a good passage">
+                <img class="photograph_sample" src="./images/passage_xs_resized.jpg" alt="a good passage">
               </li>
               <li class="image_slides">
                 <span class="image_number">6/8</span>
@@ -108,36 +109,38 @@
                 <img class="photograph_sample" src="./images/canyon_lg.jpg" alt="canion's image">
               </li>
             </ul>
+          </nav>
           </div>
+          <!-- This is used for sliding the images in the javscript file, the function nextImages is seen there and the same with the currentImage function-->
           <div class="arrow_slides_container">
-            <p class="arrow_prev" onclick="plusSlides(-1)">❮</p>
-            <p class="arrow_next" onclick="plusSlides(1)">❯</p>
+            <p class="arrow_prev" onclick="nextImages(-1)">❮</p>
+            <p class="arrow_next" onclick="nextImages(1)">❯</p>
           </div>
           <nav class="images_container">
             <ul class="all_photographs">
               <li class="image_slider_list">
-                <img class="image_slider" src="./images/rock_carvings_lg.jpg" onclick="currentSlide(1)" alt="The Woods">
+                <img class="image_slider" src="./images/rock_carvings_lg.jpg" onclick="currentImage(1)" alt="Image of a rock carving">
               </li>
             <li class="image_slider_list">
-                <img class="image_slider" src="./images/stairs_lg.jpg" onclick="currentSlide(2)" alt="Cinque Terre">
+                <img class="image_slider" src="./images/stairs_lg.jpg" onclick="currentImage(2)" alt="A picture of nice stairs">
             </li>
               <li class="image_slider_list">
-                <img class="image_slider" src="./images/ripples_lg.jpg" onclick="currentSlide(3)" alt="big ripples image">
+                <img class="image_slider" src="./images/ripples_lg.jpg" onclick="currentImage(3)" alt="big ripples image">
               </li>
               <li class="image_slider_list">
-                <img class="image_slider" src="./images/dunes_lg.jpg" onclick="currentSlide(4)" alt="nice photo of dunes">
+                <img class="image_slider" src="./images/dunes_lg.jpg" onclick="currentImage(4)" alt="nice photo of dunes">
               </li>
               <li class="image_slider_list">
-                <img class="image_slider" src="./images/passage_xs.jpg" onclick="currentSlide(5)" alt="a good passage">
+                <img class="image_slider" src="./images/passage_xs.jpg" onclick="currentImage(5)" alt="a good passage">
               </li>
               <li class="image_slider_list">
-                <img class="image_slider" src="./images/car_lg.jpg" onclick="currentSlide(6)" alt="image of a car">
+                <img class="image_slider" src="./images/car_lg.jpg" onclick="currentImage(6)" alt="image of a car">
               </li>
               <li class="image_slider_list">
-                <img class="image_slider" src="./images/sunset_lg.jpg" onclick="currentSlide(7)" alt="sunset">
+                <img class="image_slider" src="./images/sunset_lg.jpg" onclick="currentImage(7)" alt="sunset">
               </li>
               <li class="image_slider_list">
-                <img class="image_slider" src="./images/canyon_lg.jpg" onclick="currentSlide(8)" alt="canion's image">
+                <img class="image_slider" src="./images/canyon_lg.jpg" onclick="currentImage(8)" alt="canion's image">
               </li> 
             </ul>
           </nav>
