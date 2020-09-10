@@ -50,8 +50,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   margin: 0;
-  background-color: var(--main-background-color);
-  overflow-x: hidden; }
+  background-color: var(--main-background-color); }
 
 .page_contents_container {
   margin-left: 16px;
@@ -345,11 +344,14 @@ main {
   max-width: 100%; }
 
 .image_slides {
-  display: none;
-  position: relative; }
+  display: none; }
 
 .image_number {
-  display: none; }
+  display: block;
+  font-size: 12px;
+  color: var(--text-color-white);
+  position: absolute;
+  top: -6px; }
 
 .arrow_slides_container {
   width: 100%;
@@ -413,9 +415,7 @@ main {
 @media (min-width: 1114px) {
   .image_number {
     font-size: 16px;
-    color: var(--text-color-white);
-    position: absolute;
-    top: 9%; }
+    top: 0; }
   .arrow_prev,
   .arrow_next {
     font-size: 24px; }

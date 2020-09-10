@@ -22,12 +22,15 @@
 }
 
 .image_slides {
-  display: none;
-  position: relative;
+  display: none; 
 }
 
 .image_number {
-  display: none;
+  display: block;
+  font-size: 12px;
+  color: $header-text-color;
+  position: absolute;
+  top: -6px;
 }
 
 .arrow_slides_container {
@@ -101,11 +104,9 @@
 }
 
 @media (min-width: $desktop-breakpoint) {
-  .image_number {
+  .image_number { 
     font-size: 16px;
-    color: $header-text-color;
-    position: absolute;
-    top: 9%;
+    top: 0;
   }
 
   .arrow_prev,
