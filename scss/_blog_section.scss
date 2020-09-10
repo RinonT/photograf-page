@@ -1,4 +1,10 @@
 @import "variables";
+.article_heading {
+  font-size: 40px;
+  line-height: 48px;
+  padding-bottom: 31px;
+}
+
 
 .blog_section_text { 
   font-size: 18px;
@@ -17,5 +23,24 @@
 
   & .social_media_icons_lists {
     padding-top: 0;
+  }
+}
+
+@media(min-width: $desktop-breakpoint) {
+  .blog_section {
+    max-width: 570px;
+    // Decrease the big space above the contact section
+    margin-bottom: -80px;
+  }
+
+  .blog_section_article {
+    & .article_heading {
+      font-size: 52px;
+      line-height: 64px;
+    }
+
+    & .social_media_tabs {
+      padding-bottom: 0;
+    }
   }
 }
