@@ -10,8 +10,7 @@
 
 .photograph_sample {
   max-width: 100%;
-  padding-top: 74px;
-}
+ }
 
 .photograph_sample,
 .image_slider {
@@ -28,10 +27,7 @@
 }
 
 .image_number {
-  font-size: 8px;
-  position: absolute;
-  top: 21%;
-  color: $header-text-color;
+  display: none;
 }
 
 .arrow_slides_container {
@@ -59,8 +55,13 @@
 
 .image_slider {
   max-width: 137px;
-  max-height: 85px;
+  max-height: 82px;
+  opacity: 0.5;
   cursor: pointer;
+}
+
+.clear {
+  opacity: 1;
 }
 
 .image_slider_list:not(:last-of-type) .image_slider {
@@ -102,6 +103,8 @@
 @media (min-width: $desktop-breakpoint) {
   .image_number {
     font-size: 16px;
+    color: $header-text-color;
+    position: absolute;
     top: 9%;
   }
 
@@ -109,7 +112,7 @@
   .arrow_next {
     font-size: 24px;
   }
-  
+
   .photographs_info {
     max-width: 443px;
     padding-top: 0;
@@ -126,7 +129,5 @@
 
   .image_slider {
     max-width: 100%;
-    max-height: 85px;
-    opacity: 0.5;
   }
 }

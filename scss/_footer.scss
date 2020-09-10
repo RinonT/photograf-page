@@ -36,30 +36,6 @@ footer {
   }
 }
 
-.social_media_icons_lists {
-  @include flex-row-alignement;
-  justify-content: unset;
-}
-
-.social_meadia_icon {
-  margin-right: 16px;
-}
-
-.social_meadia_link {
-  & svg {
-    fill: $default-text-color;
-  }
-
-  & svg:hover {
-    fill: $header-background;
-  }
-}
-
-// Change the color of the instagram when it is hovered over
-.social_meadia_icon:last-of-type svg:hover {
-  fill: #F56040;
-}
-
 footer .page_links {
   color: $second-text-color;
   mix-blend-mode: normal;
@@ -79,7 +55,7 @@ footer .page_links:hover {
 .user_samples_list img {
   border-radius: 4px;
   max-width: 70px;
-  margin-right: 32px;
+  margin-right: 24px;
 }
 
 .image_description {

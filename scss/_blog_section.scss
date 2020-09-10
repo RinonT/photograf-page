@@ -5,15 +5,14 @@
   padding-bottom: 31px;
 }
 
-
-.blog_section_text { 
+.blog_section_text {
   font-size: 18px;
   line-height: 32px;
   padding-bottom: 50px;
 }
 
 .blog_section_text:last-of-type {
-   color: $second-text-color;
+  color: $second-text-color;
 }
 
 .blog_section_article {
@@ -26,7 +25,51 @@
   }
 }
 
-@media(min-width: $desktop-breakpoint) {
+.social_media_icons_lists {
+  @include flex-row-alignement;
+  justify-content: unset;
+}
+
+.social_meadia_icon {
+  margin-right: 16px;
+}
+
+.social_meadia_link {
+  & svg {
+    fill: $default-text-color;
+  }
+
+  & svg:hover {
+    fill: $header-background;
+  }
+}
+
+.social_media_icons_lists {
+  @include flex-row-alignement;
+  justify-content: unset;
+}
+
+.social_meadia_icon {
+  margin-right: 16px;
+}
+
+.social_meadia_link {
+  & svg {
+    fill: $default-text-color;
+  }
+
+  & svg:hover { 
+    fill: $header-background;
+  }
+  
+}
+
+// Change the color of the instagram when it is hovered over
+.social_meadia_icon:last-of-type svg:hover {
+  fill: #f56040;
+}
+
+@media (min-width: $desktop-breakpoint) {
   .blog_section {
     max-width: 570px;
     // Decrease the big space above the contact section
