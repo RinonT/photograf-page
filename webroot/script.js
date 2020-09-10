@@ -3,34 +3,36 @@ const main = document.querySelector("main");
 const menu = document.querySelector(".page_navigation");
 const openMenu = document.querySelector(".open_menu");
 const heading = document.querySelector(".page_header_heading");
-
+ 
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// function plusSlides(n) {
-//   showSlides(slideIndex += n);
-// }
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("image_slides");
-  var dots = document.getElementsByClassName("image_slider"); 
-//   var captionText = document.getElementById("caption");
+  let i;
+  let slides = document.getElementsByClassName("image_slides");
+  let dots = document.getElementsByClassName("image_slider"); 
+
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
+
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
+
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
+
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  // captionText.innerHTML = dots[slideIndex-1].alt;
+  dots[slideIndex-1].className += " active"; 
 }
 
 // A function that displays the menu
@@ -47,3 +49,5 @@ const removeMenu = () => {
 openMenu.addEventListener("click", showMenu)
 main.addEventListener("click", removeMenu);
 heading.addEventListener("click", removeMenu);
+
+ 

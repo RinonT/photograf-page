@@ -1,5 +1,9 @@
 @import "variables";
 
+.all_images_container {
+  position: relative;
+}
+
 .all_photographs {
   @include flex-row-alignement;
 } 
@@ -17,6 +21,34 @@
 .images_container {
   max-width: 100%;
 }
+
+.image_slides {
+  display: none;
+  position: relative;
+}
+
+.image_number {
+  font-size: 8px;
+  position: absolute;
+  top: 21%;
+  color: $header-text-color;
+} 
+
+.arrow_slides_container {
+  width: 100%;
+  @include flex-row-alignement;
+  position: absolute;
+  top: 45%;
+}
+
+.arrow_prev,
+.arrow_next {
+  font-size: 24px;
+  color: $header-text-color;
+  cursor: pointer;
+}
+
+ 
 
 .image_slider {
   max-width: 137px;
@@ -61,10 +93,6 @@
   }
 }
  
-.image_slides {
-  display: none;
-}
-
 @media(min-width: $desktop-breakpoint) {
   .photographs_info {
     max-width: 443px;
