@@ -538,6 +538,7 @@ main {
 
 .email_adress_input {
   border: 2px rgba(128, 128, 128, 0.39);
+  border-radius: 2px;
   min-width: 75%;
   margin-top: 12px;
   padding: 13px; }
@@ -573,11 +574,11 @@ main {
     flex-direction: row;
     justify-content: space-between;
     flex-basis: 50%;
-    margin-top: 73px; }
+    margin-top: 60px; }
   .email_adress_input {
     min-width: 346px; }
   .submit_button {
-    margin-top: 40px;
+    margin-top: 39px;
     padding-top: 10px;
     padding-bottom: 10px; } }
 

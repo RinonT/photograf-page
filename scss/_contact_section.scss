@@ -5,6 +5,7 @@
   padding-top: 63px;
   padding-bottom: 54px;
 }
+
 .contact_section_container {
   max-width: $container-mobile-max-width;
 }
@@ -19,7 +20,7 @@
 
 .contact_section_sub-heading {
   font-size: 40px;
-  line-height: 48px; 
+  line-height: 48px;
   margin-top: 19px;
   margin-bottom: 44px;
 }
@@ -29,13 +30,14 @@
   text-transform: uppercase;
 }
 
-.email_adress_input { 
+.email_adress_input {
   border: 2px rgba(128, 128, 128, 0.39);
-  min-width: 75%; 
+  border-radius: 2px;
+  min-width: 75%;
   margin-top: 12px;
-  padding: 13px;   
+  padding: 13px;
 }
- 
+
 .email_adress_input:focus {
   outline-color: $header-background;
 }
@@ -51,8 +53,7 @@
   padding-right: 45px;
 }
 
-
-@media(min-width: $desktop-breakpoint) {
+@media (min-width: $desktop-breakpoint) {
   .contact_section_container {
     max-width: $desktop-breakpoint;
     @include flex-row-alignement;
@@ -72,17 +73,16 @@
   .contact_form {
     @include flex-row-alignement;
     flex-basis: 50%;
-    margin-top: 73px;
+    margin-top: 60px;
   }
-  
+
   .email_adress_input {
     min-width: 346px;
   }
 
   .submit_button {
-    margin-top: 40px;
+    margin-top: 39px;
     padding-top: 10px;
     padding-bottom: 10px;
   }
-
 }
