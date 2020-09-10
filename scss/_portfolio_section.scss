@@ -6,7 +6,7 @@
 
 .all_photographs {
   @include flex-row-alignement;
-} 
+}
 
 .photograph_sample {
   max-width: 100%;
@@ -32,7 +32,7 @@
   position: absolute;
   top: 21%;
   color: $header-text-color;
-} 
+}
 
 .arrow_slides_container {
   width: 100%;
@@ -43,18 +43,24 @@
 
 .arrow_prev,
 .arrow_next {
-  font-size: 24px;
+  font-size: 16px;
   color: $header-text-color;
   cursor: pointer;
+  padding: 16px;
 }
 
- 
+.arrow_prev {
+  padding-left: 0;
+}
+
+.arrow_next {
+  padding-right: 0;
+}
 
 .image_slider {
   max-width: 137px;
-  max-height: 85px; 
+  max-height: 85px;
   cursor: pointer;
-
 }
 
 .image_slider_list:not(:last-of-type) .image_slider {
@@ -92,8 +98,18 @@
     font-weight: bold;
   }
 }
- 
-@media(min-width: $desktop-breakpoint) {
+
+@media (min-width: $desktop-breakpoint) {
+  .image_number {
+    font-size: 16px;
+    top: 9%;
+  }
+
+  .arrow_prev,
+  .arrow_next {
+    font-size: 24px;
+  }
+  
   .photographs_info {
     max-width: 443px;
     padding-top: 0;
@@ -103,8 +119,8 @@
   .photograph_info_detail_list:nth-of-type(3) {
     max-width: unset;
   }
-  
-  .images_container {
+
+  .images_container:last-of-type {
     padding-bottom: 87px;
   }
 
