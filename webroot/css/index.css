@@ -363,9 +363,16 @@ main {
 
 .arrow_prev,
 .arrow_next {
-  font-size: 24px;
+  font-size: 16px;
   color: var(--text-color-white);
-  cursor: pointer; }
+  cursor: pointer;
+  padding: 16px; }
+
+.arrow_prev {
+  padding-left: 0; }
+
+.arrow_next {
+  padding-right: 0; }
 
 .image_slider {
   max-width: 137px;
@@ -402,13 +409,19 @@ main {
   font-weight: bold; }
 
 @media (min-width: 1114px) {
+  .image_number {
+    font-size: 16px;
+    top: 9%; }
+  .arrow_prev,
+  .arrow_next {
+    font-size: 24px; }
   .photographs_info {
     max-width: 443px;
     padding-top: 0;
     padding-bottom: 0; }
   .photograph_info_detail_list:nth-of-type(3) {
     max-width: unset; }
-  .images_container {
+  .images_container:last-of-type {
     padding-bottom: 87px; }
   .image_slider {
     max-width: 100%;

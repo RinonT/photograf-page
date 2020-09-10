@@ -1,38 +1,48 @@
-console.log("it works");
+ // Grab all the necessary elements from the html
 const main = document.querySelector("main");
 const menu = document.querySelector(".page_navigation");
 const openMenu = document.querySelector(".open_menu");
 const heading = document.querySelector(".page_header_heading");
- 
-var slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+// Grab the container that displays the full image
+const slides = document.querySelectorAll(".image_slides");
+// The image element
+const image = document.querySelectorAll(".image_slider"); 
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+// Initializing the index of the image
+let slideIndex = 1;
 
-function showSlides(n) {
+// A reusable function that displays the images when an event happens
+const showImages = (n) => {
   let i;
-  let slides = document.getElementsByClassName("image_slides");
-  let dots = document.getElementsByClassName("image_slider"); 
+  if (n > slides.length) {
+     slideIndex = 1 
+  }  
 
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n < 1) {
+    slideIndex = slides.length
+  }
 
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
 
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+  for (i = 0; i < image.length; i++) {
+      image[i].className = image[i].className.replace(" active", "");
   }
 
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active"; 
+  image[slideIndex-1].className += " active"; 
+}
+
+showImages(slideIndex);
+
+const nextImages = (n) => {
+  showImages(slideIndex += n);
+}
+
+const currentImage = (n) => {
+  showImages(slideIndex = n);
 }
 
 // A function that displays the menu
