@@ -42,6 +42,7 @@ footer .page_links {
 }
 
 footer .page_links:hover {
+  font-weight: bold;
   color: $default-text-color;
   mix-blend-mode: unset;
 }
