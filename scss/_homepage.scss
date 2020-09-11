@@ -10,13 +10,15 @@ main {
     color: $dark-black; 
 
     & svg {
-      fill: $black-color; 
+      fill: $black-color;  
     }
   }
 
   .page_links:hover {
     color: $light-blue-color;
-    
+    text-transform: uppercase;
+    font-weight: bold;
+
     & svg:hover{
       fill: $light-blue-color; 
     }
