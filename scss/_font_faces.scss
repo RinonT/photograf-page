@@ -31,8 +31,7 @@ $fonts: (
       font-weight: map-get($font, 'weight');
       font-style: map-get($font, 'style');
       font-style: map-get($font, 'normal');
-      src:
-           local(map-get($font, name)),
+      src: local(map-get($font, name)),
            local(map-get($font, system-name)),
            url('../fonts/#{map-get($font, "filename")}.woff2') format('woff2'),
            url('../fonts/ #{map-get($font, "filename")}.woff') format('woff');
