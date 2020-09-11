@@ -24,34 +24,15 @@
   }
 }
 
-@mixin font-stuck($type) {
-  $fonts: (
-    body: (
-      font-family: "dm sans",
-      font-style: normal,
-      font-weight: normal,
-      font-size: 16px,
-      line-height: 24px,
-      h1: (
-        font-family: "dm sans display",
-        font-style: normal,
-        font-weight: normal,
-      ),
-    ),
-  );
-
-  @each $prop, $value in map-get($fonts, $type) {
-    @if type-of($value) == "map" {
-      & > #{$prop} {
-        @each $sub-prop, $sub-value in $value {
-          #{$sub-prop}: $sub-value;
-        }
-      }
-    } @else {
-      #{$prop}: $value;
-    }
-  }
+@mixin font-stuck {
+  font-family: "dm sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
 }
+
+  
 
 @mixin flex-row-alignement {
   display: flex;

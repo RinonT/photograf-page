@@ -1,7 +1,8 @@
+@import "font_faces";
 @import "variables";
- 
+
 body {
-  @include font-stuck(body);
+  @include font-stuck;
   margin: 0;
   background-color: $page-background; 
 }
@@ -12,7 +13,7 @@ body {
 }
 
 
- 
+h1, 
 h2,
 h3 {
   font-family: "dm sans display";

@@ -4,13 +4,11 @@ main {
   background-color:  $main-bg-color;
 }
 
-.homepage {
-  padding-bottom: 74px;
-  
+.homepage { 
   & .page_links { 
-  font-size: 16px;
-  line-height: 24px;
-  color: $dark-black; 
+    @include font-stuck;
+    color: $dark-black; 
+
     & svg {
       fill: $black-color; 
     }
