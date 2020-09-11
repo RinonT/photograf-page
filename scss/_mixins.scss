@@ -1,24 +1,52 @@
-
-@mixin reset($type){
+@mixin reset($type) {
   $resets: (
     ul: (
-      list-style: none, 
+      list-style: none,
       margin: 0,
       padding: 0,
-
       li: (
         margin: 0,
-        padding: 0, 
-      )
-    )
+        padding: 0,
+      ),
+    ),
   );
+
   @each $prop, $value in map-get($resets, $type) {
-    @if type-of($value) == 'map' {
+    @if type-of($value) == "map" {
       & > #{$prop} {
         @each $sub-prop, $sub-value in $value {
           #{$sub-prop}: $sub-value;
         }
-      }      
+      }
+    } @else {
+      #{$prop}: $value;
+    }
+  }
+}
+
+@mixin font-stuck($type) {
+  $fonts: (
+    body: (
+      font-family: "dm sans",
+      font-style: normal,
+      font-weight: normal,
+      font-size: 16px,
+      line-height: 24px,
+      h1: (
+        font-family: "dm sans display",
+        font-style: normal,
+        font-weight: normal,
+      ),
+    ),
+  );
+
+  @each $prop, $value in map-get($fonts, $type) {
+    @if type-of($value) == "map" {
+      & > #{$prop} {
+        @each $sub-prop, $sub-value in $value {
+          #{$sub-prop}: $sub-value;
+        }
+      }
     } @else {
       #{$prop}: $value;
     }
