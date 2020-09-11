@@ -527,7 +527,7 @@ main {
   background-color: var(--header-background-color);
   border-color: rgba(0, 0, 0, 0.1);
   border-radius: 3px;
-  color: var(--header-background-color);
+  color: var(--text-color-white);
   margin-top: 16px;
   padding: 13px;
   padding-left: 45px;
