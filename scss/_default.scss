@@ -4,7 +4,7 @@
 body {
   @include font-stuck;
   margin: 0;
-  background-color: $page-background; 
+  background-color: $page-background;
 }
 
 .page_contents_container {
@@ -12,8 +12,7 @@ body {
   margin-right: 16px;
 }
 
-
-h1, 
+h1,
 h2,
 h3 {
   font-family: "dm sans display";
@@ -29,7 +28,7 @@ p {
 ul {
   @include reset(ul);
 }
- 
+
 a {
   text-decoration: none;
 }
@@ -44,11 +43,10 @@ fieldset {
   margin: 0;
 }
 
-@media(min-width: $desktop-breakpoint) {
+@media (min-width: $desktop-breakpoint) {
   .page_contents_container {
     max-width: $desktop-breakpoint;
     margin-left: auto;
     margin-right: auto;
   }
-
 }

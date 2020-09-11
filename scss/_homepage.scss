@@ -1,16 +1,16 @@
 @import "variables";
 
 main {
-  background-color:  $main-bg-color;
+  background-color: $main-bg-color;
 }
 
-.homepage { 
-  & .page_links { 
+.homepage {
+  & .page_links {
     @include font-stuck;
-    color: $dark-black; 
+    color: $dark-black;
 
     & svg {
-      fill: $black-color;  
+      fill: $black-color;
     }
   }
 
@@ -19,8 +19,8 @@ main {
     text-transform: uppercase;
     font-weight: bold;
 
-    & svg:hover{
-      fill: $light-blue-color; 
+    & svg:hover {
+      fill: $light-blue-color;
     }
   }
 
@@ -33,7 +33,6 @@ main {
   font-size: 52px;
   line-height: 64px;
   padding-bottom: 50px;
- 
 }
 
 .homepage_text {
@@ -42,8 +41,7 @@ main {
   line-height: 32px;
 }
 
- 
-@media(min-width: $desktop-breakpoint) { 
+@media (min-width: $desktop-breakpoint) {
   .homepage_heading {
     max-width: 586px;
     font-size: 72px;

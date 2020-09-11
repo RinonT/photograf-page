@@ -24,15 +24,13 @@
   }
 }
 
-@mixin font-stuck{
-      font-family: "dm sans";
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 24px;
+@mixin font-stuck {
+  font-family: "dm sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
 }
-
- 
 
 @mixin flex-row-alignement {
   display: flex;

@@ -1,10 +1,10 @@
 @import "variables";
 
-.page_header { 
+.page_header {
   background-color: $light-blue-color;
 }
 
-.page_header_heading { 
+.page_header_heading {
   font-size: 24px;
   line-height: 32px;
   text-transform: uppercase;
@@ -13,7 +13,7 @@
 }
 
 .page_header_container {
-  @include flex-row-alignement; 
+  @include flex-row-alignement;
 }
 
 // Wrap some selectors in the ".page_header" because those classes are still used in some different sections.
@@ -28,8 +28,8 @@
     left: 125%;
     bottom: 0;
     min-width: 100%;
-    max-height: 108px; 
-    box-shadow: 0 0 50px rgba(0,0,0,.5);  
+    max-height: 108px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   }
 
   & .page_navigation_tabs_list {
@@ -39,10 +39,10 @@
   }
 
   & .page_navigation_tabs_list:hover {
-    border: $light-blue-color solid 2px; 
+    border: $light-blue-color solid 2px;
   }
 
-  & .page_links { 
+  & .page_links {
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
@@ -55,34 +55,32 @@
 .page_links:hover {
   color: $light-blue-color;
   opacity: 1;
-} 
-
+}
 
 details.show_menu {
   & summary::-webkit-details-marker {
     visibility: hidden;
   }
 
- 
-  & summary {   
-    padding: 32px; 
+  & summary {
+    padding: 32px;
     padding-bottom: 16px;
     padding-right: 0;
     background-image: url(../icons/icon_menu.svg);
     background-repeat: no-repeat;
     background-position-y: 24px;
     background-position-x: 24px;
-    outline: none; 
+    outline: none;
     cursor: pointer;
-  } 
+  }
   // Specific rules for firefox
-  @-moz-document url-prefix() { 
-   & summary {
-    // Display block is used to get rid of the mark in firefox
+  @-moz-document url-prefix() {
+    & summary {
+      // Display block is used to get rid of the mark in firefox
       display: block;
-      padding: 53px; 
+      padding: 53px;
       padding-bottom: 16px;
-      padding-right: 0;  
+      padding-right: 0;
     }
   }
 
@@ -92,19 +90,17 @@ details.show_menu {
   }
 }
 
-  
-
 // This is a prevention if the Javascript is not suppported
 .show_menu[open] ~ .page_navigation {
   top: 10%; // After the header's background
-  left: 0%; 
+  left: 0%;
 }
 
 .page_navigation.close {
   opacity: 0;
 }
-  
-@media(min-width: $desktop-breakpoint) {
+
+@media (min-width: $desktop-breakpoint) {
   .page_header_heading {
     font-size: 40px;
     line-height: 48px;
@@ -116,7 +112,7 @@ details.show_menu {
   }
 
   .page_header {
-    & .page_navigation { 
+    & .page_navigation {
       min-width: unset;
       height: unset;
       background-color: unset;
@@ -126,17 +122,17 @@ details.show_menu {
       margin-top: 27px;
       padding-top: 0;
     }
-  
+
     & .page_navigation_tabs {
       min-width: 324px;
-      @include flex-row-alignement; 
+      @include flex-row-alignement;
     }
 
     & .page_navigation_tabs_list {
       max-width: unset;
       border: unset;
     }
- 
+
     & .page_links {
       text-transform: unset;
       color: $white-color;
@@ -144,7 +140,7 @@ details.show_menu {
     }
 
     & .page_links:hover {
-      color: #F56040;
+      color: #f56040;
       text-transform: uppercase;
     }
   }
