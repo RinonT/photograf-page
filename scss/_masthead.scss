@@ -33,9 +33,9 @@
   }
 
   & .page_navigation_tabs_list {
+    max-width: 100px;
     border: rgba(0, 0, 0, 0.3) solid 1px;
     margin-bottom: 2px;
-    max-width: 100px;
   }
 
   & .page_navigation_tabs_list:hover {
@@ -60,7 +60,7 @@
 
 details.show_menu {
   & summary::-webkit-details-marker {
-    color: transparent;
+    visibility: hidden;
   }
 
  
@@ -133,6 +133,7 @@ details.show_menu {
     }
 
     & .page_navigation_tabs_list {
+      max-width: unset;
       border: unset;
     }
  

@@ -153,9 +153,9 @@ fieldset {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); }
 
 .page_header .page_navigation_tabs_list {
+  max-width: 100px;
   border: rgba(0, 0, 0, 0.3) solid 1px;
-  margin-bottom: 2px;
-  max-width: 100px; }
+  margin-bottom: 2px; }
 
 .page_header .page_navigation_tabs_list:hover {
   border: var(--header-background-color) solid 2px; }
@@ -173,7 +173,7 @@ fieldset {
   opacity: 1; }
 
 details.show_menu summary::-webkit-details-marker {
-  color: transparent; }
+  visibility: hidden; }
 
 details.show_menu summary {
   padding: 32px;
@@ -226,6 +226,7 @@ details.show_menu span {
     flex-direction: row;
     justify-content: space-between; }
   .page_header .page_navigation_tabs_list {
+    max-width: unset;
     border: unset; }
   .page_header .page_links {
     text-transform: unset;
@@ -260,7 +261,9 @@ main {
     fill: var(--text-primary-color); }
 
 .homepage .page_links:hover {
-  color: var(--header-background-color); }
+  color: var(--header-background-color);
+  text-transform: uppercase;
+  font-weight: bold; }
   .homepage .page_links:hover svg:hover {
     fill: var(--header-background-color); }
 
