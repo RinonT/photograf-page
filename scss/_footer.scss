@@ -1,8 +1,8 @@
 @import "variables";
 
 footer {
-  background-color: $header-text-color;
-  color: $second-text-color;
+  background-color: $white-color;
+  color: $dark-black;
   padding-top: 75px;
 }
 
@@ -15,7 +15,7 @@ footer {
 }
 
 .footer_article_heading {
-  color: $default-text-color;
+  color: $black-color;
   font-size: 24px;
   line-height: 32px;
   text-transform: uppercase;
@@ -37,13 +37,13 @@ footer {
 }
 
 footer .page_links {
-  color: $second-text-color;
+  color: $dark-black;
   mix-blend-mode: normal;
 }
 
 footer .page_links:hover {
   font-weight: bold;
-  color: $default-text-color;
+  color: $black-color;
   mix-blend-mode: unset;
 }
 
@@ -72,7 +72,7 @@ footer .page_links:hover {
   & time {
     font-weight: bold;
     font-size: 12px;
-    color: $default-text-color;
+    color: $black-color;
   }
 }
  
@@ -81,7 +81,7 @@ footer .page_links:hover {
   content: "";
   width: 100%;
   height: 1px;
-  background-color: $default-text-color;
+  background-color: $black-color;
   opacity: 0.1;
   position: absolute;
   left: 0;

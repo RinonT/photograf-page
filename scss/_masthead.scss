@@ -1,14 +1,14 @@
 @import "variables";
 
 .page_header { 
-  background-color: $header-background;
+  background-color: $light-blue-color;
 }
 
 .page_header_heading { 
   font-size: 24px;
   line-height: 32px;
   text-transform: uppercase;
-  color: $header-text-color;
+  color: $white-color;
   margin-top: 16px;
 }
 
@@ -35,14 +35,14 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 24px; 
-    color: $default-text-color;
+    color: $black-color;
     text-transform: uppercase;
     opacity: 0.5;
   }
 }
 
 .page_links:hover {
-  color: $header-background;
+  color: $light-blue-color;
   opacity: 1;
 } 
 
@@ -123,7 +123,7 @@ details.show_menu {
 
     & .page_links {
       text-transform: unset;
-      color: $header-text-color;
+      color: $white-color;
       opacity: 1;
     }
 

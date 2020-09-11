@@ -10,17 +10,17 @@ main {
   & .page_links { 
   font-size: 16px;
   line-height: 24px;
-  color: $second-text-color; 
+  color: $dark-black; 
     & svg {
-      fill: $default-text-color; 
+      fill: $black-color; 
     }
   }
 
   .page_links:hover {
-    color: $header-background;
+    color: $light-blue-color;
     
     & svg:hover{
-      fill: $header-background; 
+      fill: $light-blue-color; 
     }
   }
 

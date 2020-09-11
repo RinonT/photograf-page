@@ -51,12 +51,15 @@ body {
   line-height: 24px;
   margin: 0;
   background-color: var(--main-background-color); }
+  body > h1 {
+    font-family: "dm sans display";
+    font-style: normal;
+    font-weight: normal; }
 
 .page_contents_container {
   margin-left: 16px;
   margin-right: 16px; }
 
-h1,
 h2,
 h3 {
   font-family: "dm sans display";
@@ -165,7 +168,7 @@ fieldset {
   left: 125%;
   bottom: 0;
   min-width: 100%;
-  height: max-content;
+  max-height: 84px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); }
 
 .page_header .page_links {
@@ -181,18 +184,25 @@ fieldset {
   opacity: 1; }
 
 details.show_menu summary::-webkit-details-marker {
-  display: none; }
+  color: transparent; }
 
 details.show_menu summary {
   padding: 32px;
-  padding-right: 16px;
+  padding-bottom: 16px;
+  padding-right: 0;
   background-image: url(../icons/icon_menu.svg);
   background-repeat: no-repeat;
   background-position-y: 24px;
   background-position-x: 24px;
   outline: none;
-  height: 100%;
   cursor: pointer; }
+
+@-moz-document url-prefix() {
+  details.show_menu summary {
+    display: block;
+    padding: 53px;
+    padding-bottom: 16px;
+    padding-right: 0; } }
 
 details.show_menu p,
 details.show_menu span {
@@ -676,6 +686,7 @@ footer .page_links {
   mix-blend-mode: normal; }
 
 footer .page_links:hover {
+  font-weight: bold;
   color: var(--text-primary-color);
   mix-blend-mode: unset; }
 

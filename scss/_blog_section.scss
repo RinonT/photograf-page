@@ -12,7 +12,7 @@
 }
 
 .blog_section_text:last-of-type {
-  color: $second-text-color;
+  color: $dark-black;
 }
 
 .blog_section_article {
@@ -36,11 +36,11 @@
 
 .social_meadia_link {
   & svg {
-    fill: $default-text-color;
+    fill: $black-color;
   }
 
   & svg:hover {
-    fill: $header-background;
+    fill: $light-blue-color;
   }
 }
 
@@ -55,13 +55,12 @@
 
 .social_meadia_link {
   & svg {
-    fill: $default-text-color;
+    fill: $black-color;
   }
 
-  & svg:hover { 
-    fill: $header-background;
+  & svg:hover {
+    fill: $light-blue-color;
   }
-  
 }
 
 // Change the color of the instagram when it is hovered over

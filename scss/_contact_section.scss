@@ -39,14 +39,14 @@
 }
 
 .email_adress_input:focus {
-  outline-color: $header-background;
+  outline-color: $light-blue-color;
 }
 
 .submit_button {
-  background-color: $header-background;
+  background-color: $light-blue-color;
   border-color: rgba(0, 0, 0, 0.1);
   border-radius: 3px;
-  color: $header-text-color;
+  color: $white-color;
   margin-top: 16px;
   padding: 13px;
   padding-left: 45px;
