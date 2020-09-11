@@ -20,6 +20,7 @@
 .page_header {
   & .page_navigation {
     padding: 1rem;
+    padding-top: 8px;
     background-color: #f8f8f8;
     position: absolute;
     z-index: 3;
@@ -27,14 +28,24 @@
     left: 125%;
     bottom: 0;
     min-width: 100%;
-    max-height: 84px; 
+    max-height: 108px; 
     box-shadow: 0 0 50px rgba(0,0,0,.5);  
   }
- 
+
+  & .page_navigation_tabs_list {
+    border: rgba(0, 0, 0, 0.3) solid 1px;
+    margin-bottom: 2px;
+    max-width: 100px;
+  }
+
+  & .page_navigation_tabs_list:hover {
+    border: $light-blue-color solid 2px; 
+  }
+
   & .page_links { 
     font-weight: bold;
     font-size: 16px;
-    line-height: 24px; 
+    line-height: 24px;
     color: $black-color;
     text-transform: uppercase;
     opacity: 0.5;
@@ -121,6 +132,10 @@ details.show_menu {
       @include flex-row-alignement; 
     }
 
+    & .page_navigation_tabs_list {
+      border: unset;
+    }
+ 
     & .page_links {
       text-transform: unset;
       color: $white-color;

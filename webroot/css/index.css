@@ -141,6 +141,7 @@ fieldset {
 
 .page_header .page_navigation {
   padding: 1rem;
+  padding-top: 8px;
   background-color: #f8f8f8;
   position: absolute;
   z-index: 3;
@@ -148,8 +149,16 @@ fieldset {
   left: 125%;
   bottom: 0;
   min-width: 100%;
-  max-height: 84px;
+  max-height: 108px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); }
+
+.page_header .page_navigation_tabs_list {
+  border: rgba(0, 0, 0, 0.3) solid 1px;
+  margin-bottom: 2px;
+  max-width: 100px; }
+
+.page_header .page_navigation_tabs_list:hover {
+  border: var(--header-background-color) solid 2px; }
 
 .page_header .page_links {
   font-weight: bold;
@@ -216,6 +225,8 @@ details.show_menu span {
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
+  .page_header .page_navigation_tabs_list {
+    border: unset; }
   .page_header .page_links {
     text-transform: unset;
     color: var(--text-color-white);
