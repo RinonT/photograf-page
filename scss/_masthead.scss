@@ -27,7 +27,7 @@
     left: 125%;
     bottom: 0;
     min-width: 100%;
-    height: max-content; 
+    max-height: 84px; 
     box-shadow: 0 0 50px rgba(0,0,0,.5);  
   }
  
@@ -46,21 +46,33 @@
   opacity: 1;
 } 
 
+
 details.show_menu {
   & summary::-webkit-details-marker {
-  display:none;
+    color: transparent;
   }
-  
+
+ 
   & summary {   
-    padding: 32px;
-    padding-right: 16px;
+    padding: 32px; 
+    padding-bottom: 16px;
+    padding-right: 0;
     background-image: url(../icons/icon_menu.svg);
     background-repeat: no-repeat;
     background-position-y: 24px;
     background-position-x: 24px;
-    outline: none;
-    height: 100%;
+    outline: none; 
     cursor: pointer;
+  } 
+  // Specific rules for firefox
+  @-moz-document url-prefix() { 
+   & summary {
+    // Display block is used to get rid of the mark in firefox
+      display: block;
+      padding: 53px; 
+      padding-bottom: 16px;
+      padding-right: 0;  
+    }
   }
 
   & p,
@@ -68,6 +80,8 @@ details.show_menu {
     display: none;
   }
 }
+
+  
 
 // This is a prevention if the Javascript is not suppported
 .show_menu[open] ~ .page_navigation {
