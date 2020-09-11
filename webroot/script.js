@@ -4,10 +4,13 @@ const menu = document.querySelector(".page_navigation");
 const openMenu = document.querySelector(".open_menu");
 const heading = document.querySelector(".page_header_heading");
 
+const slideNext = document.querySelector(".next");
+const slidePrev = document.querySelector(".prev");
+ 
 // Grab the container that displays the full image
 const slides = document.querySelectorAll(".image_slides");
 // The image element
-const image = document.querySelectorAll(".image_slider"); 
+const images = document.querySelectorAll(".image_slider"); 
 
 // Get access to the next and pre arrow
 const arrowNext = document.querySelector(".arrow_next");
@@ -24,18 +27,20 @@ const showImages = (n) => {
      slideIndex = 1 
   }  
 
-  if(n < 1 ) {slideIndex = slides.length};
+  if(n < 1 ) {
+    slideIndex = slides.length
+  };
 
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
 
-  for (i = 0; i < image.length; i++) {
-      image[i].className = image[i].className.replace(" active", "");
+  for (i = 0; i < images.length; i++) {
+      images[i].className = images[i].className.replace(" active", "");
   }
 
   slides[slideIndex-1].style.display = "block";
-  image[slideIndex-1].className += " active"; 
+  images[slideIndex-1].className += " active"; 
 }
 
 showImages(slideIndex);
@@ -70,4 +75,5 @@ arrowNext.addEventListener("click", showNextImage = () => {
 arrowPrev.addEventListener("click", showPrevImage = () => {
   nextImages(-1);
 })
+ 
  
