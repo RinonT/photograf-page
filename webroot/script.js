@@ -15,20 +15,19 @@ let slideIndex = 1;
 // A reusable function that displays the images when an event happens
 const showImages = (n) => {
   let i;
+  
   if (n > slides.length) {
      slideIndex = 1 
   }  
 
-  if (n < 1) {
-    slideIndex = slides.length
-  }
+  n < 1 ? "slideIndex = slides.length" : "";
 
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
 
   for (i = 0; i < image.length; i++) {
-      image[i].className = image[i].className.replace(" active", "");
+      image[i].className = image[i].className.replace("active", "");
   }
 
   slides[slideIndex-1].style.display = "block";
