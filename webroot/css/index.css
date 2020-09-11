@@ -90,8 +90,9 @@ label {
   display: block; }
 
 fieldset {
-  border-color: transparent;
-  padding: 0; }
+  border: unset;
+  padding: 0;
+  margin: 0; }
 
 @media (min-width: 1114px) {
   .page_contents_container {
@@ -595,7 +596,7 @@ main {
   background-color: var(--header-background-color);
   border-color: rgba(0, 0, 0, 0.1);
   border-radius: 3px;
-  color: var(--text-color-white);
+  color: var(--header-background-color);
   margin-top: 16px;
   padding: 13px;
   padding-left: 45px;

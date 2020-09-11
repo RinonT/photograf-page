@@ -38,8 +38,9 @@ label {
 }
 
 fieldset {
-  border-color: transparent;
+  border: unset;
   padding: 0;
+  margin: 0;
 }
 
 @media(min-width: $desktop-breakpoint) {
