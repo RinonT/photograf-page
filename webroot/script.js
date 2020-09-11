@@ -9,6 +9,10 @@ const slides = document.querySelectorAll(".image_slides");
 // The image element
 const image = document.querySelectorAll(".image_slider"); 
 
+// Get access to the next and pre arrow
+const arrowNext = document.querySelector(".arrow_next");
+const arrowPrev = document.querySelector(".arrow_prev");
+
 // Initializing the index of the image
 let slideIndex = 1;
 
@@ -20,14 +24,14 @@ const showImages = (n) => {
      slideIndex = 1 
   }  
 
-  n < 1 ? "slideIndex = slides.length" : "";
+  if(n < 1 ) {slideIndex = slides.length};
 
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
 
   for (i = 0; i < image.length; i++) {
-      image[i].className = image[i].className.replace("active", "");
+      image[i].className = image[i].className.replace(" active", "");
   }
 
   slides[slideIndex-1].style.display = "block";
@@ -59,4 +63,11 @@ openMenu.addEventListener("click", showMenu)
 main.addEventListener("click", removeMenu);
 heading.addEventListener("click", removeMenu);
 
+arrowNext.addEventListener("click", showNextImage = () => {
+  nextImages(+1);
+});
+
+arrowPrev.addEventListener("click", showPrevImage = () => {
+  nextImages(-1);
+})
  
