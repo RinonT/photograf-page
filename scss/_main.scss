@@ -1,8 +1,7 @@
-
-@media(min-width: $desktop-breakpoint) {
-  main { 
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+@media (min-width: $desktop-breakpoint) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .homepage {
@@ -18,7 +17,7 @@
   .blog_section {
     grid-row: 3;
     grid-column: 2/3;
-    transform: translateY(-37%); 
+    transform: translateY(-37%);
   }
 
   .contact_section {

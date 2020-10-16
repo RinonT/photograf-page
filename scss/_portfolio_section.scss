@@ -2,7 +2,7 @@
 .portfolio_section {
   padding-top: 74px;
 }
- 
+
 .images_container {
   position: relative;
 }
@@ -13,7 +13,7 @@
 
 .photograph_sample {
   max-width: 100%;
- }
+}
 
 .photograph_sample,
 .image_slider {
@@ -25,7 +25,7 @@
 }
 
 .image_slides {
-  display: none; 
+  display: none;
 }
 
 .image_number {
@@ -107,7 +107,7 @@
 }
 
 @media (min-width: $desktop-breakpoint) {
-  .image_number { 
+  .image_number {
     font-size: 16px;
     top: 0;
   }

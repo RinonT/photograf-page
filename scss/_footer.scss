@@ -26,7 +26,7 @@ footer {
   & .social_media_icons_lists {
     padding-top: 30px;
   }
-  
+
   & .page_navigation_tabs_list:nth-of-type(1) {
     padding-bottom: 30px;
   }
@@ -63,10 +63,10 @@ footer .page_links:hover {
   margin: 0;
 }
 
-.user_samples_list { 
+.user_samples_list {
   & span,
   & time {
-  display: block;
+    display: block;
   }
 
   & time {
@@ -75,7 +75,7 @@ footer .page_links:hover {
     color: $black-color;
   }
 }
- 
+
 .page_information::before {
   display: block;
   content: "";
@@ -92,29 +92,29 @@ footer .page_links:hover {
   padding-top: 27px;
 }
 
-@media(min-width: $desktop-breakpoint) {
+@media (min-width: $desktop-breakpoint) {
   footer {
     padding-top: 0;
   }
-  
+
   .footer_container {
     @include flex-row-alignement;
     flex-wrap: wrap;
   }
-  
-  .footer_article:not(:last-of-type) { 
+
+  .footer_article:not(:last-of-type) {
     padding-top: 70px;
   }
-  
+
   .footer_article:nth-of-type(1) {
     flex-basis: 40%;
     max-width: 270px;
   }
 
   .footer_article:nth-of-type(2) {
-    flex-basis: 25%; 
+    flex-basis: 25%;
   }
-  
+
   .footer_article:nth-of-type(3) {
     flex-basis: 35%;
   }
@@ -127,7 +127,7 @@ footer .page_links:hover {
     padding-top: 0;
   }
 
-  .user_samples_list { 
+  .user_samples_list {
     margin-bottom: 39px;
   }
 
@@ -138,7 +138,7 @@ footer .page_links:hover {
   .footer_article:last-of-type {
     padding-bottom: 75px;
   }
-  
+
   .page_information .footer_article_text:last-of-type {
     padding-top: 27px;
   }
