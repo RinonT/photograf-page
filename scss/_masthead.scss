@@ -121,10 +121,11 @@ details.show_menu {
       transform: translate(0%, 0%);
       margin-top: 27px;
       padding-top: 0;
+      flex-basis: 33%;
     }
 
-    & .page_navigation_tabs {
-      min-width: 324px;
+    & .page_navigation__tabs {
+      min-width: 324px; 
       @include flex-row-alignement;
     }
 

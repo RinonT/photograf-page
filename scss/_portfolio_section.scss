@@ -70,6 +70,10 @@
   opacity: 1;
 }
 
+.image_slider:hover {
+  opacity: 1;
+} 
+
 .image_slider_list:not(:last-of-type) .image_slider {
   margin-right: 11px;
 }

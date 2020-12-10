@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "dm sans";
+  font-family: "DM Sans";
   font-weight: 700;
   font-style: normal;
   src: local("DM Serif"), local("DM Serif"), url("../fonts/dm_sans_bold.woff2") format("woff2"), url("../fonts/ dm_sans_bold.woff") format("woff"); }
 
 @font-face {
-  font-family: "dm sans";
+  font-family: "DM Sans";
   font-weight: 400;
   font-style: normal;
   src: local("DM Sans"), local("DM Sans"), url("../fonts/dm_sans_regular.woff2") format("woff2"), url("../fonts/ dm_sans_regular.woff") format("woff"); }
@@ -14,16 +14,16 @@
   font-family: "dm sans display";
   font-weight: 400;
   font-style: normal;
-  src: local("DM sans Display"), local("DM sans Display"), url("../fonts/dm_serif_display_400.woff2") format("woff2"), url("../fonts/ dm_serif_display_400.woff") format("woff"); }
+  src: local("DM sans Display"), local("DM sans Display"), url("../fonts/dm_serif_display.woff2") format("woff2"), url("../fonts/ dm_serif_display.woff") format("woff"); }
 
 @font-face {
-  font-family: "dm sans";
+  font-family: "DM Sans";
   font-weight: 700;
   font-style: normal;
   src: local("DM Serif"), local("DM Serif"), url("../fonts/dm_sans_bold.woff2") format("woff2"), url("../fonts/ dm_sans_bold.woff") format("woff"); }
 
 @font-face {
-  font-family: "dm sans";
+  font-family: "DM Sans";
   font-weight: 400;
   font-style: normal;
   src: local("DM Sans"), local("DM Sans"), url("../fonts/dm_sans_regular.woff2") format("woff2"), url("../fonts/ dm_sans_regular.woff") format("woff"); }
@@ -32,7 +32,7 @@
   font-family: "dm sans display";
   font-weight: 400;
   font-style: normal;
-  src: local("DM sans Display"), local("DM sans Display"), url("../fonts/dm_serif_display_400.woff2") format("woff2"), url("../fonts/ dm_serif_display_400.woff") format("woff"); }
+  src: local("DM sans Display"), local("DM sans Display"), url("../fonts/dm_serif_display.woff2") format("woff2"), url("../fonts/ dm_serif_display.woff") format("woff"); }
 
 :root {
   --header-background-color: #434ccc;
@@ -44,11 +44,7 @@
   --beauty-section-background: rgba(67, 76, 204, 0.05); }
 
 body {
-  font-family: "dm sans";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
+  font-family: 'DM Sans', sans-serif;
   margin: 0;
   background-color: var(--main-background-color); }
 
@@ -201,8 +197,9 @@ details.show_menu span {
     box-shadow: unset;
     transform: translate(0%, 0%);
     margin-top: 27px;
-    padding-top: 0; }
-  .page_header .page_navigation_tabs {
+    padding-top: 0;
+    flex-basis: 33%; }
+  .page_header .page_navigation__tabs {
     min-width: 324px;
     display: flex;
     flex-direction: row;
@@ -251,7 +248,7 @@ main {
   background-color: var(--beauty-section-background); }
 
 .homepage .page_links {
-  font-family: "dm sans";
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -276,6 +273,7 @@ main {
   padding-bottom: 50px; }
 
 .homepage_text {
+  font-family: "DM Sans", sans-serif;
   max-width: 586px;
   font-size: 18px;
   line-height: 32px; }
@@ -355,6 +353,9 @@ main {
   cursor: pointer; }
 
 .clear {
+  opacity: 1; }
+
+.image_slider:hover {
   opacity: 1; }
 
 .image_slider_list:not(:last-of-type) .image_slider {
@@ -476,13 +477,13 @@ main {
     padding-bottom: 0; } }
 
 @font-face {
-  font-family: "dm sans";
+  font-family: "DM Sans";
   font-weight: 700;
   font-style: normal;
   src: local("DM Serif"), local("DM Serif"), url("../fonts/dm_sans_bold.woff2") format("woff2"), url("../fonts/ dm_sans_bold.woff") format("woff"); }
 
 @font-face {
-  font-family: "dm sans";
+  font-family: "DM Sans";
   font-weight: 400;
   font-style: normal;
   src: local("DM Sans"), local("DM Sans"), url("../fonts/dm_sans_regular.woff2") format("woff2"), url("../fonts/ dm_sans_regular.woff") format("woff"); }
@@ -491,7 +492,7 @@ main {
   font-family: "dm sans display";
   font-weight: 400;
   font-style: normal;
-  src: local("DM sans Display"), local("DM sans Display"), url("../fonts/dm_serif_display_400.woff2") format("woff2"), url("../fonts/ dm_serif_display_400.woff") format("woff"); }
+  src: local("DM sans Display"), local("DM sans Display"), url("../fonts/dm_serif_display.woff2") format("woff2"), url("../fonts/ dm_serif_display.woff") format("woff"); }
 
 :root {
   --header-background-color: #434ccc;
