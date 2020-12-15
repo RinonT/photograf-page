@@ -1,106 +1,65 @@
 # Front-end final mockup-to-website project
+ 
+<h1 align="center">Photograph</h1>
 
-Hey everyone! 
+<div align="center">
+  <h3>
+    <a href="https://photograph-rinon.netlify.app/"
+      Demo
+    </a>
+    <span> | </span>
+    <a href="https://github.com/ganamavo/front-end-finals">
+      Solution
+    </a>
+  </h3>
+</div>
 
-This will be our final project in the front-end course, so let's make it a good one :)
+<!-- TABLE OF CONTENTS -->
 
-Please fork-and-clone this project as your own repo.
+## Table of Contents
 
-First things first, let's get you set up. You will need the following…
+-   [Overview](#overview)
+    -   [Built With](#built-with)
+-   [Features](#features)
+-   [How to use](#how-to-use)
+-   [Contact](#contact)
+-   [Acknowledgements](#acknowledgements)
 
-## Dependencies
+<!-- OVERVIEW -->
 
-- Node.js
-- Figma
-- Figma Font Helper
+## Overview
 
-## Install
+![screenshot](./webroot/images/photograf-screenshot.png)
+ 
+1.  My demo can be seen by following this [link](https://photograph-rinon.netlify.app/)
+1.  Some experience:
+  - Building an existing website of a photographic company. This is actually the homepage with small details on the pages that the whole website has. 
 
-We'll be using `node-sass` for our Sass compilation. Let's install that by doing:
+1.   What I have learned and improved:
+  - Working with image sliders is one of the new skills that I get from building this website. Apart from that, I learned how to use a function to generate fonts with sass.
+  
+1. Wisdom to share:
+The best way to improve is to be motivated and always confident to face challenges no matter how difficult it will be.
 
-1. `npm i`
+### Built With
+ 
+- [Sass](http://www.mailplanet.com/@sass.com)
+- [HTML] (https://html.com/)
 
-## Getting started
+## How To Use 
 
-### Design
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node-sass](https://docs.npmjs.com/cli/v6/commands/npm-install)) installed on your computer. From your command line:
 
-You can find the design:
+```bash
+# Clone this repository
+$ git clone https://github.com/ganamavo/country-quiz
 
-- online at [figma.com/Laaqiq-1-Portfolio-detail-Responsive](https://www.figma.com/file/VgF87mULloYb7HZ1EMCRzU/Laaqiq-1-Portfolio-detail-Responsive?node-id=0%3A1) (Recommended)
-- by importing the `.fig` file in [the `source_materials` folder](./source_materials/) into your figma app.
+# Install dependencies
+$ npm install
 
-### Source files
+# Run the app
+npm run scss:watch
 
-Have a look in the `source_materials` folder. There you'll find any fonts you need, images that are required by the design work.
-
-2. Install any OTF/TTF fonts found in the `source_materials/fonts` folder in your system, so that you don't get bugged by Figma's Font replacement dialog box.
-
-### Webroot
-
-As with most setups, it's a good idea to isolate all the web-files in the `webroot` folder.
-Export all the images, fonts, HTML, JS, and CSS you use to this webroot folder (in the right subfolder of course!).
-
-3. Create a `webroot/index.html` file.
-
-### Sass
-
-We'll be using the `scss` folder for all our Sass files.
-
-4. Create a `scss/index.scss` file, that will act as our manifest Sass file.
-5. Build your CSS file once by running the `npm run scss` script.
-
-All your Sass files will be output to the `webroot/css` folder.
-
-### Linking up our styles
-
-6. Link up the new `webroot/css/index.css` stylesheet in your `index.html`
-
-## Development
-
-You'll want to run the `scss:watch` task when you're developing this project.
-
-## Marking & requirements
-
-You have 5 days to convert the design work to a working single webpage. There's a lot to cover here in a week, and we don't expect you to have the entire website done in that time, but it would be great if you could.
-
-So, what is expected then? We're going to be marking most of the things we've learned this year. Here's a list of things we'll be looking at:
-
-- **All the HTML**
-  - Your HTML should be clean, accurate, and consistent.
-  - Use the right elements for the right job.
-  - Structure your HTML nicely.
-  - Make sure your HTML is accessible.
-  - Make sure your HTML is valid.
-  - *Bonus points*: Progressively enhancing your HTML, e.g. using `<picture>` elements with multiple sources.
-- **As much Sass as you can**
-  - Your Sass should use variables at a minimum, and be extended with mixins, functions, and abstract classes if you can.
-  - Your Sass output should be orderly, and expected.
-  - Keep your SCSS files clean
-  - Add helpful comments to the difficult-to-understand parts.
-  - You don't have to style everything within the time-frame. But we want to see completed components where possible.
-- **CSS**
-  - Add style to elements that the user can focus, hover over, or interact with.
-  - Your work should be Mobile-First by default, and Responsive.
-  - *Bonus points*: Use Custom Properties if you can.
-- **Images**
-  - Are you using a CSS `background-image` or an `<img>` in the HTML? Make sure it's for the right reasons.
-  - Use the correct image format for each case
-  - *Bonus points*: Compress your images
-- **Fonts**
-  - If you'd like, use a `fonts.google.com`-supplied stylesheet for the fonts, but we really want to see you use your own `@font-face` declarations. Link up the WOFF2 and WOFF formats to your CSS using as many `@font-face` at-rules as you need.
-  - Use `local()` functions for locally-installed fonts.
-  - Test that your website works without local font support.
-  - *Bonus points*: Subset your fonts
-- **General**
-  - No spelling or grammar mistakes please
-  - Test, test, test!
-  - Don't feel pressure to complete the entire page, but rather try complete each component you start. **Leave out the bits that look too complex and work on them at the end!**
-  - Ensure your commits are frequent and well-described.
-- **Advanced**
-  - Make the menu on mobile work nicely, use your own imagination here.
-  - *Bonus points*: Make the Image Slider, and other components work as intended, maybe you'll need some JS?
-  - *Bonus points*: Use newer image formats such as WebP and AVIF, while still maintaining support for older formats.
-
-## Ready?
-
-Apply everything you've learend before, do your best, and Good luck! 🤓
+```
+-   GitHub [@ganamavo](https://github.com/ganamavo)
+-   Twitter [@twitter](https://twitter.com/RTendrinomena)

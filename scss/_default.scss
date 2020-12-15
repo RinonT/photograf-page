@@ -1,9 +1,9 @@
 @import "font_faces";
 @import "variables";
-// @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
 body {
-  // @include font-stuck;
+  @include font-stuck;
   font-family: 'DM Sans', sans-serif;
   margin: 0;
   background-color: $page-background;
