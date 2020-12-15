@@ -408,6 +408,9 @@ main {
     max-width: unset; }
   .images_container:last-of-type {
     padding-bottom: 87px; }
+  .photograph_sample {
+    max-width: 100%;
+    height: 697px; }
   .image_slider {
     max-width: 100%; } }
 
