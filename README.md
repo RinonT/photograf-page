@@ -52,7 +52,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/ganamavo/country-quiz
+$ git clone https://github.com/ganamavo/front-end-finals
 
 # Install dependencies
 $ npm install
