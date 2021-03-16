@@ -156,17 +156,20 @@ fieldset {
   color: var(--header-background-color);
   opacity: 1; }
 
+details > summary {
+  list-style: none; }
+
 details.show_menu summary::-webkit-details-marker {
-  visibility: hidden; }
+  visibility: hidden;
+  display: none; }
 
 details.show_menu summary {
   padding: 32px;
-  padding-bottom: 16px;
   padding-right: 0;
   background-image: url(../icons/icon_menu.svg);
   background-repeat: no-repeat;
   background-position-y: 24px;
-  background-position-x: 24px;
+  background-position-x: 12px;
   outline: none;
   cursor: pointer; }
 
@@ -218,8 +221,7 @@ details.show_menu span {
     color: var(--text-color-white);
     opacity: 1; }
   .page_header .page_links:hover {
-    color: #f56040;
-    text-transform: uppercase; }
+    color: #f56040; }
   .page_navigation.close {
     opacity: 1; } }
 
