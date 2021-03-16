@@ -112,11 +112,13 @@ fieldset {
   background-color: var(--header-background-color); }
 
 .page_header_heading {
-  font-size: 24px;
-  line-height: 32px;
-  text-transform: uppercase;
-  color: var(--text-color-white);
-  margin-top: 16px; }
+  display: flex; }
+  .page_header_heading a {
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: var(--text-color-white);
+    margin-top: 16px; }
 
 .page_header_container {
   display: flex;
@@ -192,7 +194,7 @@ details.show_menu span {
   opacity: 0; }
 
 @media (min-width: 1114px) {
-  .page_header_heading {
+  .page_header_heading a {
     font-size: 40px;
     line-height: 48px;
     margin-bottom: 16px; }
@@ -205,7 +207,7 @@ details.show_menu span {
     position: unset;
     box-shadow: unset;
     transform: translate(0%, 0%);
-    margin-top: 27px;
+    margin-top: 29px;
     padding-top: 0;
     flex-basis: 33%; }
   .page_header .page_navigation__tabs {
@@ -267,7 +269,6 @@ main {
 
 .homepage .page_links:hover {
   color: var(--header-background-color);
-  text-transform: uppercase;
   font-weight: bold; }
   .homepage .page_links:hover svg:hover {
     fill: var(--header-background-color); }

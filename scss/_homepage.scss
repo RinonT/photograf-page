@@ -15,8 +15,7 @@ main {
   }
 
   .page_links:hover {
-    color: $light-blue-color;
-    text-transform: uppercase;
+    color: $light-blue-color; 
     font-weight: bold;
 
     & svg:hover {
