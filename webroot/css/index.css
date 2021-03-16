@@ -606,11 +606,12 @@ footer {
   padding-bottom: 29px; }
 
 .footer_article_heading {
-  color: var(--text-primary-color);
-  font-size: 24px;
-  line-height: 32px;
-  text-transform: uppercase;
   padding-bottom: 24px; }
+  .footer_article_heading a {
+    color: var(--text-primary-color);
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase; }
 
 footer .social_media_icons_lists {
   padding-top: 30px; }
@@ -625,9 +626,13 @@ footer .page_links {
   color: var(--text-secondary-color);
   mix-blend-mode: normal; }
 
-footer .page_links:hover {
+.page_navigation_tabs_list:nth-of-type(1) .page_links {
   font-weight: bold;
+  color: var(--text-primary-color); }
+
+footer .page_links:hover {
   color: var(--text-primary-color);
+  font-weight: bold;
   mix-blend-mode: unset; }
 
 .user_samples_list {

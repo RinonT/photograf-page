@@ -15,11 +15,14 @@ footer {
 }
 
 .footer_article_heading {
-  color: $black-color;
-  font-size: 24px;
-  line-height: 32px;
-  text-transform: uppercase;
   padding-bottom: 24px;
+
+  a {
+    color: $black-color;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+  }
 }
 
 footer {
@@ -41,9 +44,14 @@ footer .page_links {
   mix-blend-mode: normal;
 }
 
-footer .page_links:hover {
+.page_navigation_tabs_list:nth-of-type(1) .page_links {
   font-weight: bold;
   color: $black-color;
+}
+
+footer .page_links:hover {
+  color: $black-color;
+  font-weight: bold;
   mix-blend-mode: unset;
 }
 
