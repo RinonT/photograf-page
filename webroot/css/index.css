@@ -361,7 +361,7 @@ main {
   opacity: 0.5;
   cursor: pointer; }
 
-.clear {
+.active {
   opacity: 1; }
 
 .image_slider:hover {
@@ -400,6 +400,9 @@ main {
   .image_number {
     font-size: 16px;
     top: 0; }
+  .image_slides:nth-of-type(5) {
+    max-width: 110%;
+    height: 90%; }
   .arrow_prev,
   .arrow_next {
     font-size: 24px; }
@@ -581,9 +584,9 @@ main {
   .email_adress_input {
     min-width: 346px; }
   .submit_button {
-    margin-top: 39px;
-    padding-top: 10px;
-    padding-bottom: 10px; } }
+    margin-top: 36px;
+    padding-top: 11px;
+    padding-bottom: 11px; } }
 
 :root {
   --header-background-color: #434ccc;
@@ -648,6 +651,7 @@ footer .page_links:hover {
   margin-right: 24px; }
 
 .image_description {
+  color: var(--text-secondary-color);
   margin: 0; }
 
 .user_samples_list span,

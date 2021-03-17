@@ -66,9 +66,9 @@
   cursor: pointer;
 }
 
-.clear {
+.active {
   opacity: 1;
-}
+} 
 
 .image_slider:hover {
   opacity: 1;
@@ -77,7 +77,6 @@
 .image_slider_list:not(:last-of-type) .image_slider {
   margin-right: 11px;
 }
-
 .photographs_info {
   padding-top: 92px;
   padding-bottom: 75px;
@@ -114,6 +113,11 @@
   .image_number {
     font-size: 16px;
     top: 0;
+  }
+
+  .image_slides:nth-of-type(5) {
+    max-width: 110%;
+    height: 90%;
   }
 
   .arrow_prev,
