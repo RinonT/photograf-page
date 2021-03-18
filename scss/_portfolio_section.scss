@@ -9,6 +9,11 @@
 
 .all_photographs {
   @include flex-row-alignement;
+  overflow-x: scroll;
+}
+
+.displayer { 
+  overflow-x: hidden;
 }
 
 .photograph_sample {
@@ -110,6 +115,9 @@
 }
 
 @media (min-width: $desktop-breakpoint) {
+  .all_photographs { 
+    overflow-x: hidden;
+  }
   .image_number {
     font-size: 16px;
     top: 0;

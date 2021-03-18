@@ -100,7 +100,7 @@ details.show_menu {
 
 // This is a prevention if the Javascript is not suppported
 .show_menu[open] ~ .page_navigation {
-  top: 10%; // After the header's background
+  top: 2%; // After the header's background
   left: 0%;
 }
 

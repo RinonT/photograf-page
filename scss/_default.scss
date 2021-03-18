@@ -10,6 +10,11 @@ body {
   overflow-x: hidden; 
 }
 
+.page_wrapper {
+  overflow-x: hidden;
+  position: relative;
+}
+
 .page_contents_container {
   margin-left: 16px;
   margin-right: 16px;

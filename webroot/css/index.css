@@ -55,6 +55,10 @@ body {
   background-color: var(--main-background-color);
   overflow-x: hidden; }
 
+.page_wrapper {
+  overflow-x: hidden;
+  position: relative; }
+
 .page_contents_container {
   margin-left: 16px;
   margin-right: 16px; }
@@ -188,7 +192,7 @@ details.show_menu span {
   display: none; }
 
 .show_menu[open] ~ .page_navigation {
-  top: 10%;
+  top: 2%;
   left: 0%; }
 
 .page_navigation.close {
@@ -313,7 +317,11 @@ main {
 .all_photographs {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  overflow-x: scroll; }
+
+.displayer {
+  overflow-x: hidden; }
 
 .photograph_sample {
   max-width: 100%; }
@@ -398,6 +406,8 @@ main {
   font-weight: bold; }
 
 @media (min-width: 1114px) {
+  .all_photographs {
+    overflow-x: hidden; }
   .image_number {
     font-size: 16px;
     top: 0; }
