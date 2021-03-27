@@ -297,7 +297,9 @@ main {
     max-width: 586px;
     font-size: 72px;
     line-height: 80px;
-    padding-bottom: 16px; } }
+    padding-bottom: 14px; }
+  .homepage_article .homepage_heading {
+    padding-bottom: 61px; } }
 
 :root {
   --header-background-color: #434ccc;
@@ -406,6 +408,8 @@ main {
   font-weight: bold; }
 
 @media (min-width: 1114px) {
+  .portfolio_section {
+    padding-top: 77px; }
   .all_photographs {
     overflow-x: hidden; }
   .image_number {
@@ -421,10 +425,14 @@ main {
     max-width: 443px;
     padding-top: 0;
     padding-bottom: 0; }
+  .photographs_info_details {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 120px; }
   .photograph_info_detail_list:nth-of-type(3) {
     max-width: unset; }
   .images_container:last-of-type {
-    padding-bottom: 87px; }
+    padding-bottom: 77px; }
   .photograph_sample {
     max-width: 100%; }
   .image_slider {

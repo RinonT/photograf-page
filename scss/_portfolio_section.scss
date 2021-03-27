@@ -115,6 +115,9 @@
 }
 
 @media (min-width: $desktop-breakpoint) {
+.portfolio_section {
+  padding-top: 77px;
+}
   .all_photographs { 
     overflow-x: hidden;
   }
@@ -139,12 +142,18 @@
     padding-bottom: 0;
   }
 
+  .photographs_info_details {
+    display: grid; 
+    grid-template-columns: auto auto;
+    column-gap: 120px;
+  }
+  
   .photograph_info_detail_list:nth-of-type(3) {
     max-width: unset;
   }
 
   .images_container:last-of-type {
-    padding-bottom: 87px;
+    padding-bottom: 77px;
   }
 
   
