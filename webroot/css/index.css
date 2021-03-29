@@ -336,7 +336,11 @@ main {
   max-width: 100%; }
 
 .image_slides {
-  display: none; }
+  display: none;
+  width: 100vw; }
+  .image_slides img {
+    width: 100vw;
+    object-fit: fill; }
 
 .image_number {
   display: block;
@@ -428,7 +432,8 @@ main {
   .photographs_info_details {
     display: grid;
     grid-template-columns: auto auto;
-    column-gap: 120px; }
+    column-gap: 75px;
+    justify-content: unset; }
   .photograph_info_detail_list:nth-of-type(3) {
     max-width: unset; }
   .images_container:last-of-type {
@@ -507,7 +512,12 @@ main {
     font-size: 52px;
     line-height: 64px; }
   .blog_section_article .social_media_tabs {
-    padding-bottom: 0; } }
+    padding-bottom: 0; }
+  .blog_section_article .blog_section_text {
+    padding-bottom: 36px; }
+  .blog_section_article .different_font {
+    font-family: "DM Sans";
+    padding-bottom: 55px; } }
 
 @font-face {
   font-family: "DM Sans";
@@ -582,6 +592,9 @@ main {
   padding-right: 45px; }
 
 @media (min-width: 1114px) {
+  .contact_section {
+    padding-top: 78px;
+    padding-bottom: 61px; }
   .contact_section_container {
     max-width: 1114px;
     display: flex;
@@ -593,18 +606,31 @@ main {
   .contact_section_sub-heading {
     max-width: 450px;
     font-size: 52px;
-    line-height: 64px; }
+    line-height: 64px;
+    margin-top: 13px; }
   .contact_form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    justify-content: unset;
+    column-gap: 54px;
     flex-basis: 50%;
     margin-top: 60px; }
   .email_adress_input {
-    min-width: 346px; }
+    min-width: 320px;
+    padding-left: 16px;
+    padding-right: 10px; }
+    .email_adress_input ::placeholder {
+      font-family: "DM Sans", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: rgba(0, 0, 0, 0.5);
+      mix-blend-mode: normal; }
   .submit_button {
     margin-top: 36px;
-    padding-top: 11px;
+    padding-top: 13px;
     padding-bottom: 11px; } }
 
 :root {
@@ -648,14 +674,14 @@ footer .page_links {
   color: var(--text-secondary-color);
   mix-blend-mode: normal; }
 
-.page_navigation_tabs_list:nth-of-type(1) .page_links {
-  font-weight: bold;
-  color: var(--text-primary-color); }
-
 footer .page_links:hover {
   color: var(--text-primary-color);
   font-weight: bold;
   mix-blend-mode: unset; }
+
+.page_navigation_tabs_list:nth-of-type(1) .page_links {
+  font-weight: bold;
+  color: var(--text-primary-color); }
 
 .user_samples_list {
   display: flex;
@@ -699,31 +725,36 @@ footer .page_links:hover {
 @media (min-width: 1114px) {
   footer {
     padding-top: 0; }
-  .footer_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap; }
-  .footer_article:not(:last-of-type) {
-    padding-top: 70px; }
-  .footer_article:nth-of-type(1) {
-    flex-basis: 40%;
-    max-width: 270px; }
-  .footer_article:nth-of-type(2) {
-    flex-basis: 25%; }
-  .footer_article:nth-of-type(3) {
-    flex-basis: 35%; }
-  .footer_article:nth-of-type(4) {
-    flex-basis: 100%; }
-  .social_media_icons_lists {
-    padding-top: 0; }
-  .user_samples_list {
-    margin-bottom: 39px; }
-  .page_information {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
-  .footer_article:last-of-type {
-    padding-bottom: 75px; }
-  .page_information .footer_article_text:last-of-type {
-    padding-top: 27px; } }
+    footer .footer_container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+    footer .footer_article:not(:last-of-type) {
+      padding-top: 67px; }
+    footer .footer_article:nth-of-type(1) {
+      flex-basis: 40%;
+      max-width: 270px; }
+    footer .footer_article:nth-of-type(2) {
+      flex-basis: 25%; }
+    footer .footer_article:nth-of-type(3) {
+      flex-basis: 35%; }
+    footer .footer_article:nth-of-type(4) {
+      flex-basis: 100%; }
+    footer .footer_article_heading {
+      margin-bottom: 23px;
+      padding-bottom: 0; }
+    footer .social_media_icons_lists {
+      padding-top: 16px; }
+    footer .user_samples_list {
+      margin-bottom: 35px; }
+    footer .page_information {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+    footer .footer_article:last-of-type {
+      padding-bottom: 75px; }
+    footer .page_navigation_tabs_list:not(:first-of-type) {
+      margin-bottom: 8px; }
+    footer .page_information .footer_article_text:last-of-type {
+      padding-top: 24px; } }
