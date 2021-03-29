@@ -68,6 +68,10 @@
   fill: #f56040;
 }
 
+.different_font {
+  font-family: "DM Sans";
+}
+
 @media (min-width: $desktop-breakpoint) {
   .blog_section {
     max-width: 570px;
@@ -89,8 +93,7 @@
       padding-bottom: 36px;
     }
 
-    .different_font {
-      font-family: "DM Sans";
+    .different_font { 
       padding-bottom: 55px;
     }
   }
