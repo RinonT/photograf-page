@@ -9,12 +9,19 @@
 
 .all_photographs {
   @include flex-row-alignement;
-  overflow-x: scroll;
 }
 
+.small_photographs {
+  overflow: scroll;
+  margin-right: -16px;  
+}
 .displayer { 
   overflow-x: hidden;
 }
+
+
+.small_photographs::-webkit-scrollbar { width: 0 !important }
+
 
 .photograph_sample {
   max-width: 100%;
@@ -162,11 +169,14 @@
   .images_container:last-of-type {
     padding-bottom: 77px;
   }
+  .photograph_sample {
+    max-width: 100%; 
+  }
 
-  
-.photograph_sample {
-  max-width: 100%; 
-}
+  .small_photographs {
+    overflow: unset;
+    margin-right: 0; 
+  }
 
   .image_slider {
     max-width: 100%;
