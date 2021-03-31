@@ -230,7 +230,8 @@ details.show_menu span {
   .page_header .page_links:hover {
     color: #f56040; }
   .page_navigation.close {
-    opacity: 1; } }
+    opacity: 1;
+    padding-right: 0; } }
 
 @media (min-width: 1150px) {
   main {

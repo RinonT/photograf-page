@@ -159,5 +159,6 @@ details.show_menu {
   // Remove the opacity in case it will still be applied to the desctop after closing the menu in the mobile
   .page_navigation.close {
     opacity: 1;
+    padding-right: 0;
   }
 }
