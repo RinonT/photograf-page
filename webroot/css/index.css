@@ -214,6 +214,7 @@ details.show_menu span {
     transform: translate(0%, 0%);
     margin-top: 29px;
     padding-top: 0;
+    padding-right: 0;
     flex-basis: 33%; }
   .page_header .page_navigation__tabs {
     min-width: 324px;
@@ -230,8 +231,7 @@ details.show_menu span {
   .page_header .page_links:hover {
     color: #f56040; }
   .page_navigation.close {
-    opacity: 1;
-    padding-right: 0; } }
+    opacity: 1; } }
 
 @media (min-width: 1150px) {
   main {
