@@ -37,12 +37,12 @@
 
 :root {
   --header-background-color: #434ccc;
-  --main-background-color: rgba(67, 76, 204, 0.05);
+  --main-background-color: #F2F2F2;
   --text-primary-color: #000000;
   --text-color-white: #ffffff;
   --yellow-background: #ffdd78;
   --text-secondary-color: rgba(0, 0, 0, 0.5);
-  --beauty-section-background: rgba(67, 76, 204, 0.05); }
+  --beauty-section-background: #F2F2F2; }
 
 body {
   font-family: 'DM Sans', sans-serif;
@@ -106,12 +106,12 @@ fieldset {
 
 :root {
   --header-background-color: #434ccc;
-  --main-background-color: rgba(67, 76, 204, 0.05);
+  --main-background-color: #F2F2F2;
   --text-primary-color: #000000;
   --text-color-white: #ffffff;
   --yellow-background: #ffdd78;
   --text-secondary-color: rgba(0, 0, 0, 0.5);
-  --beauty-section-background: rgba(67, 76, 204, 0.05); }
+  --beauty-section-background: #F2F2F2; }
 
 .page_header {
   background-color: var(--header-background-color); }
@@ -253,12 +253,12 @@ details.show_menu span {
 
 :root {
   --header-background-color: #434ccc;
-  --main-background-color: rgba(67, 76, 204, 0.05);
+  --main-background-color: #F2F2F2;
   --text-primary-color: #000000;
   --text-color-white: #ffffff;
   --yellow-background: #ffdd78;
   --text-secondary-color: rgba(0, 0, 0, 0.5);
-  --beauty-section-background: rgba(67, 76, 204, 0.05); }
+  --beauty-section-background: #F2F2F2; }
 
 main {
   background-color: var(--beauty-section-background); }
@@ -304,12 +304,12 @@ main {
 
 :root {
   --header-background-color: #434ccc;
-  --main-background-color: rgba(67, 76, 204, 0.05);
+  --main-background-color: #F2F2F2;
   --text-primary-color: #000000;
   --text-color-white: #ffffff;
   --yellow-background: #ffdd78;
   --text-secondary-color: rgba(0, 0, 0, 0.5);
-  --beauty-section-background: rgba(67, 76, 204, 0.05); }
+  --beauty-section-background: #F2F2F2; }
 
 .portfolio_section {
   padding-top: 74px; }
@@ -455,12 +455,12 @@ main {
 
 :root {
   --header-background-color: #434ccc;
-  --main-background-color: rgba(67, 76, 204, 0.05);
+  --main-background-color: #F2F2F2;
   --text-primary-color: #000000;
   --text-color-white: #ffffff;
   --yellow-background: #ffdd78;
   --text-secondary-color: rgba(0, 0, 0, 0.5);
-  --beauty-section-background: rgba(67, 76, 204, 0.05); }
+  --beauty-section-background: #F2F2F2; }
 
 .article_heading {
   font-size: 40px;
@@ -551,12 +551,12 @@ main {
 
 :root {
   --header-background-color: #434ccc;
-  --main-background-color: rgba(67, 76, 204, 0.05);
+  --main-background-color: #F2F2F2;
   --text-primary-color: #000000;
   --text-color-white: #ffffff;
   --yellow-background: #ffdd78;
   --text-secondary-color: rgba(0, 0, 0, 0.5);
-  --beauty-section-background: rgba(67, 76, 204, 0.05); }
+  --beauty-section-background: #F2F2F2; }
 
 .contact_section {
   background-color: var(--yellow-background);
@@ -647,12 +647,12 @@ main {
 
 :root {
   --header-background-color: #434ccc;
-  --main-background-color: rgba(67, 76, 204, 0.05);
+  --main-background-color: #F2F2F2;
   --text-primary-color: #000000;
   --text-color-white: #ffffff;
   --yellow-background: #ffdd78;
   --text-secondary-color: rgba(0, 0, 0, 0.5);
-  --beauty-section-background: rgba(67, 76, 204, 0.05); }
+  --beauty-section-background: #F2F2F2; }
 
 footer {
   background-color: var(--text-color-white);
