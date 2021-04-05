@@ -51,6 +51,10 @@ fieldset {
   margin: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 @media (min-width: $desktop-breakpoint) {
   .page_contents_container {
     max-width: $desktop-breakpoint;

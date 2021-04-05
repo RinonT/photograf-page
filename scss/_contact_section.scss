@@ -5,6 +5,7 @@
   background-color: $contact-section-bg;
   padding-top: 63px;
   padding-bottom: 54px;
+
 }
 
 .contact_section_container {
@@ -52,6 +53,10 @@
   padding: 13px;
   padding-left: 45px;
   padding-right: 45px;
+
+   &:hover {
+      background-color: #436cccd2;
+   }
 }
 
 @media (min-width: $desktop-breakpoint) {

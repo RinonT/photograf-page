@@ -98,6 +98,9 @@ fieldset {
   padding: 0;
   margin: 0; }
 
+button {
+  cursor: pointer; }
+
 @media (min-width: 1150px) {
   .page_contents_container {
     max-width: 1150px;
@@ -602,6 +605,8 @@ main {
   padding: 13px;
   padding-left: 45px;
   padding-right: 45px; }
+  .submit_button:hover {
+    background-color: #436cccd2; }
 
 @media (min-width: 1150px) {
   .contact_section {
